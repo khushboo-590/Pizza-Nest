@@ -50,11 +50,11 @@ const Header = () => {
                     </ul>
 
                     <div className="flex lg:hidden items-center mt-4">
-                        <CustomButton btnText="Contact Us" />
+                        <CustomButton btnText="Contact Us" className={`bg-gradient`}/>
                     </div>
                 </div>
                 <div className="hidden lg:flex items-center gap-6">
-                    <CustomButton btnText="Contact Us" />
+                    <CustomButton btnText="Contact Us" className={`bg-gradient`} />
                 </div>
                 <div
                     className="z-50 cursor-pointer group relative min-h-[17px] w-[25px] flex flex-col justify-center items-center gap-1 lg:hidden"
