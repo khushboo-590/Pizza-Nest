@@ -53,29 +53,29 @@ const Hero = () => {
         >
             <div className="pt-[80px] md:pt-[100px] lg:pt-[131px] pb-[100px] md:pb-[150px] lg:pb-[192px] max-w-full md:max-w-[644px]">
                 <div className="flex flex-col">
-                    <h1 className="custom-text-64  leading-120 font-bold text-white font-nunito-sans">
+                    <h1 className="custom-text-[64px]  leading-[120%] font-bold text-white font-nunito-sans">
                         Where Every Slice Feels Like Home
                     </h1>
 
-                    <p className="text-base leading-160 mt-4 text-white font-nunito max-w-full sm:max-w-[520px] lg:max-w-[558px]">
+                    <p className="text-base leading-[160%] mt-4 text-white font-nunito max-w-full sm:max-w-[520px] lg:max-w-[558px]">
                         At Pizza Nest, we bake more than pizza — we bake comfort. Customize<br />
                         your perfect slice, or choose from our signature favorites.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8">
                         <CustomButton btnText="Order Now" className="bg-gradient" />
-                        <CustomButton btnText="View Full Menu" className="border border-white" />
+                        <CustomButton btnText="View Full Menu" className="backdrop-blur-[30.9px] border border-[#FEFEFE] bg-[#FEFEFE0F]" />
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 mt-8 text-white max-w-full sm:max-w-[331px] justify-center items-center">
                         <div className="flex flex-col max-w-[155px] text-center">
-                            <p className="text-28px font-semibold leading-120">5,000+</p>
-                            <p className="text-base leading-120 font-semibold text-dark-gray">Pizzas Delivered</p>
+                            <p className="text-[28px] font-semibold leading-[120%]">5,000+</p>
+                            <p className="text-base leading-[120%] font-semibold text-dark-gray">Pizzas Delivered</p>
                         </div>
                         <div className="w-[1px] h-[50px] bg-[#D5D5D5] hidden sm:block"></div>
                         <div className="flex flex-col max-w-[155px] text-center">
-                            <p className="text-28px font-semibold leading-120">1,200+</p>
-                            <p className="text-base leading-120 font-semibold text-dark-gray">Happy Customers</p>
+                            <p className="text-[28px] font-semibold leading-[120%]">1,200+</p>
+                            <p className="text-base leading-[120%] font-semibold text-dark-gray">Happy Customers</p>
                         </div>
                     </div>
                 </div>

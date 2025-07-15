@@ -26,7 +26,7 @@ const Header = () => {
         <div className="font-montserrat">
             <div className="max-w-[1440px] mx-auto flex justify-between items-center pl-[150px] pr-[160px] my-[25px] relative">
                 <div className="flex items-center">
-                    <a href="#" className="text-34 leading-100% font-medium font-poppins text-gradient">
+                    <a href="#" className="text-[34px] leading-[100%] font-medium font-poppins text-light-orange">
                         Pizza Nest
                     </a>
                 </div>
