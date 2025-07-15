@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Color */
+  --primary-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+  --light-gray: #787878;
+
+  /* Font sizes */
+  --text-34: 34px;
+
+  /* Line heights */
+  --leading-100: 100%;
+  --leading-160: 160%;
+
+  /* Fonts */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+}
+
+/* Gradient text */
+.text-gradient {
+  background-image: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gradient background */
+.bg-gradient {
+  background-image: var(--primary-gradient);
+}
+
+/* Custom font & size helpers */
+.text-34 {
+  font-size: var(--text-34);
+}
+
+.leading-100 {
+  line-height: var(--leading-100);
+}
+
+.leading-160 {
+  line-height: var(--leading-160);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.font-nunito {
+  font-family: var(--font-nunito);
+}
+.light-gray{
+  color:var(--light-gray)
+}
