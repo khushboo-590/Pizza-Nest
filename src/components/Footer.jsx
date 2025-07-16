@@ -1,7 +1,6 @@
 import React from 'react'
 import { QUICK_LINKS, SOCIAL_ICON, SUPPORT_LINKS } from '../utils/helper'
 import Heading from './common/Heading'
-import { NavLink } from 'react-router-dom'
 import Descritpion from './common/Descritpion'
 
 

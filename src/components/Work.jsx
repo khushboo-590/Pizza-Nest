@@ -16,8 +16,7 @@ const Works = () => {
             </div>
             <Heading
                 className="font-semibold text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl text-center max-w-[569px] mx-auto my-6"
-                headText="Your Perfect Pizza in Just 3 Easy Steps!"
-            />
+                headText="Your Perfect Pizza in Just 3 Easy Steps!"/>
             <div className="flex md:flex-row flex-col justify-center items-center gap-6">
                 <div className="flex md:flex-row flex-col justify-center items-center gap-6 flex-wrap">
                     {HOW_IT_WORKS.map(({ id, icon: Icon, title, desc }, index) => (

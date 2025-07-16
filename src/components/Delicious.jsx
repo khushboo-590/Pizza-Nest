@@ -11,8 +11,7 @@ const Delicious = () => {
     return (
         <>
             <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 relative">
-                <img className='absolute pointer-events-none right-0 bottom-0   lg:block hidden lg:max-w-[300px] xl:max-w-[420px] animate-bounce' src={tamatoImg} alt="pizza-slice" />
-                
+                <img className='absolute pointer-events-none right-0 bottom-0   lg:block hidden lg:max-w-[300px] xl:max-w-[420px] animate-bounce' src={tamatoImg} alt="pizza-slice" />             
                 <div className="max-w-[1140px] mx-auto">
                     <div className="flex max-lg:flex-wrap gap-6 items-center">
                         {LIMITEDOFFER_DATA.map((item, index) => (

@@ -1,6 +1,4 @@
-
 import React from 'react'
-import Heading from './common/Heading';
 import aboutImg from '../assets/images/png/about-img.png'
 import { ABOUT_US_CARDS_DATA } from '../utils/helper';
 import pizzaSlice from '../assets/images/png/pizza-slice-img.png';

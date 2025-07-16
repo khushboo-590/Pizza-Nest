@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Heading from './common/Heading'
 import tastyPizza from '../assets/images/png/tasty-pizza-img.png';
