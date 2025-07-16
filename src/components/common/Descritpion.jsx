@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Description = ({ ClassName, text }) => {
+const Description = ({ className, text }) => {
   return (
-    <p className={` text-base leading-[160%] font-nunito  ${ClassName}`}>
+    <p className={`text-base font-nunito leading-[160%] ${className}`}>
       {text}
     </p>
   );

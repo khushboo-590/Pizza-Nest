@@ -1,5 +1,7 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 :root {
   --primary-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
   --light-gray: #787878;
@@ -52,4 +54,132 @@ font-family: "Nunito", sans-serif;
 
 .light-black {
   color: var(--light-black);
-}
+} */
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+ @import "tailwindcss";
+
+ body,
+ html {
+   overflow-x: hidden !important;
+ }
+
+ @theme {
+   --color-white-gray: #E8E8E8;
+   --color-off-white: #FEFEFE;
+   --color-light-white: #EFEFEF;
+   --color-near-black: #010101;
+   --color-mid-gray: #575757;
+   --color-light-gray: #C1C1C1;
+   --color-lighter-gray: #E1E1E1;
+   --color-dark-gray: #4D4D4D;
+   --color-muted-gray: #787878;
+   --color-unmuted-gray: #5C5C5C;
+   --color-black: #010101;
+   --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
+ }
+
+ * {
+   font-family: "Nunito", sans-serif;
+ }
+
+ .bg-gradient {
+   background: var(--color-prime-gradient) !important;
+ }
+
+ .bg-prime-hover:hover {
+   background: var(--color-prime-gradient) !important;
+ }
+
+ .text-gradient {
+   background: var(--color-prime-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .link-hover:hover a {
+   background: var(--color-prime-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
+ .btn-blur::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: #FEFEFE0F;
+   backdrop-filter: blur(30.9px);
+   -webkit-backdrop-filter: blur(30.9px);
+   z-index: -1;
+   border-radius: inherit;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+ }
+
+ .btn-blur-opacity-1::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: #FEFEFE0F;
+   backdrop-filter: blur(30.9px);
+   -webkit-backdrop-filter: blur(30.9px);
+   z-index: -1;
+   border-radius: inherit;
+   opacity: 1;
+   transition: opacity 0.3s ease;
+ }
+
+ .btn-blur:hover::after {
+   opacity: 1;
+ }
+
+ .btn-blur-opacity-1:hover::after {
+   opacity: 0;
+ }
+ /* Custom utility classes using the variables */
+ .text-white-gray {
+  color: var(--color-white-gray);
+ }
+
+ .bg-off-white {
+   background-color: var(--color-off-white);
+ }
+
+ .text-light-white {
+   color: var(--color-light-white);
+ }
+    .bg-light-white {
+      background: var(--color-light-white);
+    }
+
+
+ .bg-prime {
+   background: var(--color-prime-gradient) !important;
+ }
+
+ .bg-prime-hover:hover {
+   background: var(--color-prime-gradient) !important;
+ }
+
+ .text-near-black {
+   color: var(--color-near-black);
+ }
+
+ .text-mid-gray {
+   color: var(--color-mid-gray);
+ }
+
+ .text-light-gray {
+   color: var(--color-light-gray);
+ }
+
+ .text-muted-gray {
+   color: var(--color-muted-gray);
+ }
+
+ .text-dark-gray {
+   color: var(--color-dark-gray);
+ }
+
+ .text-unmuted-gray {
+   color: var(--color-unmuted-gray);
+ }

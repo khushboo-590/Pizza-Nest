@@ -11,24 +11,25 @@ import Delivery from './components/Delivery'
 import Seller from './components/Seller'
 import Explore from './components/Explore'
 import Buy from './components/Buy'
+import Delicious from './components/Delicious'
 import TestimonialSection from './components/Testimonial'
-
 function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <Hero />
       <About />
+      <Delicious/>
       <Seller />
       <Explore />
-      <Buy/>
-      <Delivery/>
-      <Work />
-      <TestimonialSection/>
-      {/* <Gallery/> */}
+      <Buy />
+      <Delivery />
+      <Work /> */}
+      <TestimonialSection />
+      <Gallery/>
       <Craving />
-      <Footer/>
+      <Footer />
     </>
   )
 }

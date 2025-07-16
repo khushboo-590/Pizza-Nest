@@ -1,72 +1,60 @@
-import React from 'react';
-import { FOOTER_LINKS } from '../utils/helper';
-import { FaceIcon, InIcon, InstagramIcon } from "../utils/icon";
-import Description from './common/Descritpion';
+import React from 'react'
+import { QUICK_LINKS, SOCIAL_ICON, SUPPORT_LINKS } from '../utils/helper'
+import Heading from './common/Heading'
+import { NavLink } from 'react-router-dom'
+import Descritpion from './common/Descritpion'
+
 
 const Footer = () => {
     return (
-        <footer className="bg-white lg:pt-20 md:pt-10 pt-5  px-4 ">
-            <div className="max-w-[1140px] mx-auto flex flex-col xl:flex-row flex-wrap justify-between gap-5 lg:gap-10">
-                <div className="max-w-[558px]">
-                    <h2 className="text-[42px] font-medium leading-[150%] text-gradient">Pizza Nest</h2>
-                    <Description
-                        text={`At Pizza Nest, we believe every slice should bring joy. Whether you're ordering for one or feeding a crowd, our pizzas are baked with care, topped with love, and delivered hot to your doorstep. You just taste the difference.`}
-                        ClassName="soft-black max-w-[558px]" />
-                    <div className="flex gap-5 items-center mt-4 lg:mt-6 ">
-                        <a
-                            href="https://www.facebook.com/yourpage"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="rounded-full p-2 bg-gradient transform transition hover:scale-110 duration-300"
-                        >
-                            <FaceIcon />
-                        </a>
-                        <a
-                            href="https://www.instagram.com/yourprofile"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="rounded-full p-2 bg-gradient transform transition hover:scale-110 duration-300"
-                        >
-                            <InstagramIcon />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/yourprofile"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="rounded-full p-2 bg-gradient transform transition hover:scale-110 duration-300"
-                        >
-                            <InIcon />
-                        </a>
-                    </div>
-                </div>
-                <div className="grid grid-cols-2 gap-6  ">
-                    {FOOTER_LINKS.map((section, index) => (
-                        <div key={index}>
-                            <h4 className="text-base font-semibold text-black leading-[160%] mb-3 f ">
-                                {section.heading}
-                            </h4>
-                            <ul className="space-y-3">
-                                {section.links.map((link, i) => (
-                                    <li key={i}>
+        <>
+            <div className="px-5  pt-8 md:pt-10 lg:pt-20">
+                <div className="max-w-[1140px] mx-auto">
+                    <div className="flex max-md:flex-col justify-between gap-8 sm:gap-10 md:gap-20">
+                        <div className="md:max-w-[400px] lg:max-w-[558px] mb-[5px]">
+                            <Heading className={'text-prime-gradient font-medium text-[42px] !leading-[63px]'} headText=
+                                "Pizza Nest" />
+                            <Descritpion className="text-mid-gray pt-3" text="At Pizza Nest, we believe every slice should bring joy. Whether you're ordering for one or feeding a crowd, our pizzas are baked with care, topped with love, and delivered hot to your doorstep. You just taste the difference." />
+                            <div className="flex items-center gap-5 mt-4 sm:mt-6">
+                                {SOCIAL_ICON.map((item, index) => (
+                                    <a key={index} className='size-[52px] bg-prime rounded-full flex justify-center items-center' href={item.socialLink}>{<item.icon />}</a>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="flex max-w-[312px] gap-2 w-full justify-between">
+                            <ul>
+                                <li className='text-[#010101] leading-[26px] mb-1'>Quick Links</li>
+                                {QUICK_LINKS.map((link, i) => (
+                                    <li key={i} className="relative group mt-2 link-hover">
                                         <a
-                                            href="#"
-                                            className="text-[#575757] hover:text-orange-500 text-base leading-[160%] transition-colors duration-300">
-                                            {link}
+                                            href={link.path}
+                                            className="relative text-base text-mid-gray group-hover:text-prime-gradient transition-colors duration-300
+        after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full
+        after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
+        after:w-0 group-hover:after:w-full after:transition-all after:duration-300"
+                                        >
+                                            {link.label}
                                         </a>
-
                                     </li>
+                                ))}
+
+
+                            </ul>
+                            <ul>
+                                <li className='text-black leading-[160%] mb-1'>Support</li>
+                                {SUPPORT_LINKS.map((link, i) => (
+                                    <li className='relative group mt-2 link-hover' key={i}> <a className='text-mid-gray leading-[160%] relative text-base group-hover:text-prime-gradient after:content-[""] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
+                  after:w-0 after:transition-all after:duration-300 group-hover:after:w-full' href="">{link}</a></li>
                                 ))}
                             </ul>
                         </div>
-                    ))}
+                    </div>
+                    <div className="border-3 border-[#D1D1D166] w-full mt-6 sm:mt-8"></div>
+                    <Descritpion className="text-mid-gray max-sm:text-sm py-4 text-center" text="Copyright Pizza Nest © 2025, All rights reserved " />
                 </div>
-            </div>
-            <div className="max-w-[1140px] h-[3px] bg-[#D1D1D166] opacity-100 mx-auto mt-[37px]" />
-            <div className=" text-center text-base  soft-black leading-[160%] py-4 ">
-                Copyright Pizza Nest © 2025, All rights reserved
-            </div>
-        </footer>
-    );
-};
+            </div >
+        </>
+    )
+}
 
-export default Footer;
+export default Footer

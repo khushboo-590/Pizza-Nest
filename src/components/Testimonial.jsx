@@ -1,76 +1,100 @@
-import React, { useState } from 'react';
-import { TESTIMONIALS }  from '../utils/helper' 
-import Description from './common/Descritpion';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import Heading from "./common/Heading";
+import { LeftArrow, Line, RightArrow } from "../utils/icon";
+import pizzaImg from "../assets/images/png/testimonial-img.png";
+import { TESTIMONIAL_AVATAR, TESTIMONIALS_DATA } from "../utils/helper";
+import CustomButton from "./common/CustomButton";
+import Description from "./common/Descritpion";
 
-
-const TestimonialSection = () => {
-    const [current, setCurrent] = useState(0);
-    const testimonial = TESTIMONIALS[current];
-
+const Testimonial = () => {
     return (
-        <div className='bg-[#F8F8F880]'>
-        <div className="py-20 px-4 max-w-[1140px] mx-auto relative text-center">
-            <h4 className="text-orange-500 font-semibold mb-1">Testimonial</h4>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-14">What Our Customers Say</h2>
-            <div className="flex flex-col md:flex-row  gap-10 md:gap-14 relative md:static">
-                {/* Image & Avatars */}
-                <div className="relative">
-                    <img
-                        src={testimonial.image}
-                        alt="Pizza"
-                        className=" border-white shadow-md"
-                    />
-                    <div className="absolute left-[-20px] lg:top-[80px] top-12 flex flex-col gap-2">
-                        {testimonial.avatars.map((avatar, idx) => (
-                            <img
-                                key={idx}
-                                src={avatar}
-                                alt={`User ${idx + 1}`}
-                                className="lg:w-16 lg:h-16 w-10 h-10 border-2 border-white shadow-md rounded-full"
-                            />
-                        ))}
+        <div className="relative px-5 py-25 bg-[url('src/assets/images/png/common-bg-img.png')] bg-no-repeat bg-cover bg-center">
+            <div className="relative max-w-[1140px] mx-auto">
+                <div className="flex justify-center items-center gap-1.5">
+                    <Line />
+                    <h4 className="text-gradient text-lg font-bold leading-[22px]">Testimonial</h4>
+                    <div className="rotate-[180deg]">
+                        <Line />
                     </div>
                 </div>
+                <Heading
+                    className="font-semibold text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl text-center mx-auto max-w-[569px] !leading-[120%] mt-2 mb-15"
+                    headText="What Our Customers Say"
+                />
+                <div className="flex flex-col lg:flex-row max-lg:justify-center max-lg:items-center relative gap-10">
+                    <div className="relative w-full max-w-[523px] sm:ml-[37px] sm:pb-[76px] pb-10">
+                        <img
+                            src={pizzaImg}
+                            alt="Pizza"
+                            className="w-full rounded-xl object-cover"
+                        />
+                        <div className="absolute  sm:left-[-36px] left-[-10px] sm:top-[70px] flex flex-col sm:gap-4  gap-2 top-[50px]  ">
+                            {TESTIMONIAL_AVATAR.map((avatar, i) => {
+                                const sizeClass =
+                                    i === 1
+                                        ? 'w-[33px] h-[34px] sm:w-[74px] sm:h-[74px] max-w-[33px] max-h-[34px] sm:max-w-[74px] sm:max-h-[74px]'
+                                        : 'w-[24px] h-[24px] sm:w-[60px] sm:h-[60px] max-w-[24px] max-h-[24px] sm:max-w-[60px] sm:max-h-[60px]';
+                                return (
+                                    <img
+                                        key={i}
+                                        src={avatar}
+                                        alt="avatar"
+                                        className={`cursor-pointer rounded-full ${sizeClass} transition-all duration-300`}
+                                    />
+                                );
+                            })}
 
-                {/* Testimonial Box */}
-                <div className="bg-white shadow-lg rounded-xl p-6 text-left w-full md:max-w-[680px] mt-8 md:mt-0 md:absolute md:right-[50px] md:bottom-[-60px]">
-                    <Description text={testimonial.quote} ClassName="text-[#545454] mt-4" />
-                    <h4 className="text-2xl leading-[140%] font-semibold mb-[2px] text-black">{testimonial.name}</h4>
-                    <p className="text-base text-[#545454] leading-[160%]">{testimonial.role}</p>
-
-                    {/* Quotation SVG */}
-                    <span className="absolute right-6 bottom-6 text-orange-100 w-[71px] h-15 font-serif select-none">
-                        <svg className="opacity-30" width="73" height="62" viewBox="0 0 73 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M40.4271 47.1885C40.4271 43.3803 41.4224 40.1823 ..." fill="url(#paint0_linear_133_5957)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_133_5957" x1="72.9155" y1="47.1435" x2="-1.25894" y2="40.9071" gradientUnits="userSpaceOnUse">
-                                    <stop stopColor="#EC6112" />
-                                    <stop offset="1" stopColor="#FF902E" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </span>
-
-                    {/* Arrows */}
-                    <div className="flex gap-3 mt-6">
-                        <button
-                            onClick={() => setCurrent((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length)}
-                            className="w-[44px] h-[44px] bg-gray-100 hover:bg-gray-200 text-black flex items-center justify-center"
-                        >
-                            ←
-                        </button>
-                        <button
-                            onClick={() => setCurrent((prev) => (prev + 1) % TESTIMONIALS.length)}
-                            className="w-[44px] h-[44px] bg-orange-500 hover:bg-orange-600 text-white flex items-center justify-center"
-                        >
-                            →
-                        </button>
+                        </div>
                     </div>
+                    <Swiper
+                        modules={[Navigation]}
+                        loop={true}
+                        navigation={{
+                            nextEl: ".nextBtn",
+                            prevEl: ".prevBtn",
+                        }}
+                        className="lg:!absolute bottom-0 right-0 max-w-[680px] w-full"
+                    >
+                        {TESTIMONIALS_DATA.map((obj, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="bg-white rounded-xl shadow-lg p-6 w-full relative">
+                                    <Description
+                                        className="text-[#545454]"
+                                        text={obj.text}
+                                    />
+                                    <h4 className="font-semibold text-2xl text-black mt-4 mb-0.5 leading-[140%]">{obj.name}</h4>
+                                    <p className="text-base leading-[160%] mb-6 text-[#545454]">{obj.role}</p>
+
+                                    <div className="flex items-center gap-2">
+                                        <CustomButton
+                                            className="group prevBtn hover:!bg-none hover:!bg-light-white !rounded-[4px] border !px-[15px] !py-3.5 transition"
+                                            btnText={
+                                                <span className="text-white group-hover:text-black transition-colors duration-300">
+                                                    <LeftArrow />
+                                                </span>
+                                            }
+                                        />
+
+                                        <CustomButton
+                                            className="group nextBtn hover:!bg-none hover:!bg-light-white !rounded-[4px] border !px-[15px] !py-3.5 transition"
+                                            btnText={
+                                                <span className="text-white group-hover:text-black transition-colors duration-300">
+                                                    <RightArrow />
+                                                </span>}/>
+
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
-        </div>
         </div>
     );
 };
 
-export default TestimonialSection;
+export default Testimonial;
