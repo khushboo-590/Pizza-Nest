@@ -26,10 +26,8 @@ import exploreImg3 from '../assets/images/png/explore-img-2.png'
 import ourMenuPizza1 from "../assets/images/png/our-menu-pizza-1.png";
 import ourMenuPizza2 from "../assets/images/png/our-menu-pizza-2.png";
 import ourMenuPizza3 from "../assets/images/png/our-menu-pizza-3.png";
-import { Check, ChefSvg, FacebookSvg, QualitySvg, SupportSvg, InstaSvg, LinkdinSvg } from "./icon";
+import { Check, ChefSvg, FacebookSvg, QualitySvg, SupportSvg, InstaSvg, LinkdinSvg, Pizza, Order, Track } from "./icon";
 
-
-import { Pizza, Order, Track } from './icon';
 
 export const HOW_IT_WORKS = [
     {
@@ -54,12 +52,6 @@ export const HOW_IT_WORKS = [
 
 
 
-// export const ABOUT_CARD_DATA = [
-//     {  title: 'Professional Chefs' },
-//     { title: 'Best Quality Food' },
-//     { title: 'Online Support' },
-// ];
-// utils/helper.js
 import avatar1 from "../assets/images/png/test-img-1.png";
 import avatar2 from "../assets/images/png/test-img-2.png";
 import avatar3 from "../assets/images/png/test-img-3.png";
@@ -107,7 +99,7 @@ export const ABOUT_US_CARDS_DATA = [
     }
 ]
 
-export const FOODDELIVERY = [
+export const FOODDELIVERY__DATA = [
     {
         icon: Check,
         info: '30-Minute Delivery Promise',

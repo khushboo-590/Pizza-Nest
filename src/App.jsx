@@ -12,12 +12,12 @@ import Seller from './components/Seller'
 import Explore from './components/Explore'
 import Buy from './components/Buy'
 import Delicious from './components/Delicious'
-import TestimonialSection from './components/Testimonial'
+import Testimonial from './components/Testimonial'
 function App() {
 
   return (
     <>
-      {/* <Header />
+      <Header />
       <Hero />
       <About />
       <Delicious/>
@@ -25,8 +25,8 @@ function App() {
       <Explore />
       <Buy />
       <Delivery />
-      <Work /> */}
-      <TestimonialSection />
+      <Work />
+      <Testimonial />
       <Gallery/>
       <Craving />
       <Footer />

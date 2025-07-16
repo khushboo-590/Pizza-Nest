@@ -12,7 +12,7 @@ import Description from "./common/Descritpion";
 
 const Testimonial = () => {
     return (
-        <div className="relative px-5 py-25 bg-[url('src/assets/images/png/common-bg-img.png')] bg-no-repeat bg-cover bg-center">
+        <div className="relative px-5 py-8 sm:py-10 md:py-20 lg:py-25 bg-[url('src/assets/images/png/common-bg-img.png')] bg-no-repeat bg-cover bg-center">
             <div className="relative max-w-[1140px] mx-auto">
                 <div className="flex justify-center items-center gap-1.5">
                     <Line />
@@ -32,7 +32,7 @@ const Testimonial = () => {
                             alt="Pizza"
                             className="w-full rounded-xl object-cover"
                         />
-                        <div className="absolute  sm:left-[-36px] left-[-10px] sm:top-[70px] flex flex-col sm:gap-4  gap-2 top-[50px]  ">
+                        <div className="absolute top-[60px] sm-mx:top-[70px] left-[-10px] sm:left-[-36px] flex flex-col gap-2 sm:gap-4">
                             {TESTIMONIAL_AVATAR.map((avatar, i) => {
                                 const sizeClass =
                                     i === 1
@@ -61,7 +61,7 @@ const Testimonial = () => {
                     >
                         {TESTIMONIALS_DATA.map((obj, index) => (
                             <SwiperSlide key={index}>
-                                <div className="bg-white rounded-xl shadow-lg p-6 w-full relative">
+                                <div className="bg-white rounded-xl shadow-lg p-6 w-full relative h-[298px] mt-2">
                                     <Description
                                         className="text-[#545454]"
                                         text={obj.text}

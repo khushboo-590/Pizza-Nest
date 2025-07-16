@@ -65,7 +65,7 @@ font-family: "Nunito", sans-serif;
 
  @theme {
    --color-white-gray: #E8E8E8;
-   --color-off-white: #FEFEFE;
+   --color-dark-white: #FEFEFE;
    --color-light-white: #EFEFEF;
    --color-near-black: #010101;
    --color-mid-gray: #575757;
@@ -84,6 +84,11 @@ font-family: "Nunito", sans-serif;
 
  .bg-gradient {
    background: var(--color-prime-gradient) !important;
+ }
+ .gradient-border-box {
+   padding: 2px;
+   border: var(--color-prime-gradient);
+   border-radius: 8px;
  }
 
  .bg-prime-hover:hover {
@@ -135,51 +140,7 @@ font-family: "Nunito", sans-serif;
  .btn-blur-opacity-1:hover::after {
    opacity: 0;
  }
- /* Custom utility classes using the variables */
- .text-white-gray {
-  color: var(--color-white-gray);
- }
-
- .bg-off-white {
-   background-color: var(--color-off-white);
- }
-
- .text-light-white {
-   color: var(--color-light-white);
- }
-    .bg-light-white {
-      background: var(--color-light-white);
-    }
-
 
  .bg-prime {
    background: var(--color-prime-gradient) !important;
- }
-
- .bg-prime-hover:hover {
-   background: var(--color-prime-gradient) !important;
- }
-
- .text-near-black {
-   color: var(--color-near-black);
- }
-
- .text-mid-gray {
-   color: var(--color-mid-gray);
- }
-
- .text-light-gray {
-   color: var(--color-light-gray);
- }
-
- .text-muted-gray {
-   color: var(--color-muted-gray);
- }
-
- .text-dark-gray {
-   color: var(--color-dark-gray);
- }
-
- .text-unmuted-gray {
-   color: var(--color-unmuted-gray);
  }
