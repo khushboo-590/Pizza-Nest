@@ -5,7 +5,6 @@ import Heading from './common/Heading';
 import Nav_DATA from '../utils/helper'
 
 const Header = () => {
-
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleNavbar = () => {
         setMenuOpen(!menuOpen);

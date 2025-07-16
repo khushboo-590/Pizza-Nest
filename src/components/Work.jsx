@@ -6,7 +6,6 @@ import Heading from './common/Heading';
 import { Line } from '../utils/icon'; 
 import leftArrow from './../assets/images/svg/arrow.svg'
 
-
 const Works = () => {
     return (
         <section className="py-8 sm:py-10 md:py-20 lg:py-25 px-5 max-w-[1140px] mx-auto font-montserrat">
