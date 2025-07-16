@@ -1,11 +1,12 @@
 import React from 'react';
 import Heading from './common/Heading';
 import { GALLERY_DATA } from '../utils/helper';
+import CustomButton from './common/CustomButton';
 
 
 const Gallery = () => {
     return (
-        <div className="max-w-[1440px] px-4 mx-auto">
+        <div className="max-w-[1440px] px-4 mx-auto ">
             <div className="mt-[100px]">
                 <div className="flex flex-col items-center">
                     <div className="w-full flex items-center justify-center gap-2 mb-2">
@@ -40,32 +41,49 @@ const Gallery = () => {
                         <Heading headText="A Glimpse Into Our Pizza World" className="mt-2 text-center" />
                     </div>
                 </div>
-
-                <div className="flex flex-wrap gap-6 mx-auto justify-center">
+                <div className="flex flex-wrap justify-center gap-6 mx-auto">
                     {GALLERY_DATA.map((column, colIdx) => (
                         <div
                             key={colIdx}
-                            className={`flex flex-col gap-6 ${colIdx === 0 || colIdx === 2 ? 'max-w-[267px]' : 'max-w-[558px]'
-                                }`}
+                            className={`
+        flex gap-4
+        ${colIdx === 1
+                                    ? 'flex-col w-full lg:max-w-[458px] xl:max-w-[558px]  '
+                                : 'flex-row lg:flex-col w-full lg:max-w-[200px] xl:max-w-[267px]'}
+      `}
                         >
                             {column.map((item, idx) =>
                                 Array.isArray(item) ? (
-                                    <div key={idx} className="flex gap-6">
+                                    <div key={idx} className="flex gap-4 w-full">
                                         {item.map((img, i) => (
-                                            <img key={i} src={img} alt={`Pizza`} className="object-cover" />
+                                            <img
+                                                key={i}
+                                                src={img}
+                                                alt="Pizza"
+                                                className="w-full object-cover rounded-md"
+                                            />
                                         ))}
                                     </div>
                                 ) : (
-                                    <img key={idx} src={item} alt={`Pizza`} className="object-cover" />
+                                    <img
+                                        key={idx}
+                                        src={item}
+                                        alt="Pizza"
+                                        className="w-full object-cover rounded-md"
+                                    />
                                 )
                             )}
                         </div>
                     ))}
-
                 </div>
 
+            <div className="flex justify-center  mx-auto">
+                <CustomButton btnText="View More" className="mt-8 bg-gradient" />
             </div>
+
+
         </div>
+        </div >
     );
 };
 

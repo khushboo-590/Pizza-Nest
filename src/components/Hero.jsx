@@ -53,7 +53,7 @@ const Hero = () => {
         >
             <div className="pt-[80px] md:pt-[100px] lg:pt-[131px] pb-[100px] md:pb-[150px] lg:pb-[192px] max-w-full md:max-w-[644px]">
                 <div className="flex flex-col">
-                    <h1 className="custom-text-[64px]  leading-[120%] font-bold text-white font-nunito-sans">
+                    <h1 className="text-[64px]  leading-[120%] font-bold text-white font-nunito-sans">
                         Where Every Slice Feels Like Home
                     </h1>
 
@@ -67,7 +67,7 @@ const Hero = () => {
                         <CustomButton btnText="View Full Menu" className="backdrop-blur-[30.9px] border border-[#FEFEFE] bg-[#FEFEFE0F]" />
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 mt-8 text-white max-w-full sm:max-w-[331px] justify-center items-center">
+                    <div className="flex flex-col sm:flex-row gap-4 mt-8 text-white max-w-full sm:max-w-[331px] justify-center items-center">
                         <div className="flex flex-col max-w-[155px] text-center">
                             <p className="text-[28px] font-semibold leading-[120%]">5,000+</p>
                             <p className="text-base leading-[120%] font-semibold text-dark-gray">Pizzas Delivered</p>

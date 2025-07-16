@@ -6,6 +6,12 @@ import About from './components/About'
 import Craving from './components/Craving'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
+import Work from './components/Work'
+import Delivery from './components/Delivery'
+import Seller from './components/Seller'
+import Explore from './components/Explore'
+import Buy from './components/Buy'
+import TestimonialSection from './components/Testimonial'
 
 function App() {
 
@@ -14,9 +20,15 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Gallery/>
-      {/* <Craving />
-      <Footer/> */}
+      <Seller />
+      <Explore />
+      <Buy/>
+      <Delivery/>
+      <Work />
+      <TestimonialSection/>
+      {/* <Gallery/> */}
+      <Craving />
+      <Footer/>
     </>
   )
 }
