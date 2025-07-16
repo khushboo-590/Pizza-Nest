@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { HOW_IT_WORKS } from '../utils/helper';
 import CustomButton from './common/CustomButton';
@@ -16,12 +15,10 @@ const Works = () => {
                 <h4 className="text-gradient text-lg font-bold">How It Works</h4>
                 <div className="rotate-180"><Line /></div>
             </div>
-
             <Heading
                 className="font-semibold text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl text-center max-w-[569px] mx-auto my-6"
                 headText="Your Perfect Pizza in Just 3 Easy Steps!"
             />
-
             <div className="flex md:flex-row flex-col justify-center items-center gap-6">
                 <div className="flex md:flex-row flex-col justify-center items-center gap-6 flex-wrap">
                     {HOW_IT_WORKS.map(({ id, icon: Icon, title, desc }, index) => (
@@ -50,9 +47,7 @@ const Works = () => {
                         </div>
                     ))}
                 </div>
-
-
-            </div>
+           </div>
         </section>
     );
 };

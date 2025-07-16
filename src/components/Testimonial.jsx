@@ -23,15 +23,13 @@ const Testimonial = () => {
                 </div>
                 <Heading
                     className="font-semibold text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl text-center mx-auto max-w-[569px] !leading-[120%] mt-2 mb-15"
-                    headText="What Our Customers Say"
-                />
+                    headText="What Our Customers Say"/>
                 <div className="flex flex-col lg:flex-row max-lg:justify-center max-lg:items-center relative gap-10">
                     <div className="relative w-full max-w-[523px] sm:ml-[37px] sm:pb-[76px] pb-10">
                         <img
                             src={pizzaImg}
                             alt="Pizza"
-                            className="w-full rounded-xl object-cover"
-                        />
+                            className="w-full rounded-xl object-cover"/>
                         <div className="absolute top-[60px] sm-mx:top-[70px] left-[-10px] sm:left-[-36px] flex flex-col gap-2 sm:gap-4">
                             {TESTIMONIAL_AVATAR.map((avatar, i) => {
                                 const sizeClass =
@@ -57,8 +55,7 @@ const Testimonial = () => {
                             nextEl: ".nextBtn",
                             prevEl: ".prevBtn",
                         }}
-                        className="lg:!absolute bottom-0 right-0 max-w-[680px] w-full"
-                    >
+                        className="lg:!absolute bottom-0 right-0 max-w-[680px] w-full">
                         {TESTIMONIALS_DATA.map((obj, index) => (
                             <SwiperSlide key={index}>
                                 <div className="bg-white rounded-xl shadow-lg p-6 w-full relative h-[298px] mt-2">
