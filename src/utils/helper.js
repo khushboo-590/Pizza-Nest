@@ -23,7 +23,7 @@ import avatar2 from "../assets/images/png/test-img-2.png";
 import avatar3 from "../assets/images/png/test-img-3.png";
 import { Check, ChefSvg, FacebookSvg, QualitySvg, SupportSvg, InstaSvg, LinkdinSvg, Pizza, Order, Track } from "./icon";
 
-const Nav_DATA=[
+export const Nav_DATA=[
     { label: 'Home', path: '/' },
     { label: 'Menu', path: '/menu' },
     { label: 'Customize Pizza', path: '/customize' },

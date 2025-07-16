@@ -1,6 +1,5 @@
 import React from 'react'
-import { QUICK_LINKS, SOCIAL_ICON, SUPPORT_LINKS } from '../utils/helper'
-import Heading from './common/Heading'
+import { QUICK_LINKS, SOCIAL_ICON, SUPPORT_LINKS } from '../utils/helper';
 import Descritpion from './common/Descritpion'
 
 
@@ -10,9 +9,11 @@ const Footer = () => {
             <div className="px-5  pt-8 md:pt-10 lg:pt-20">
                 <div className="max-w-[1140px] mx-auto">
                     <div className="flex max-md:flex-col justify-between gap-8 sm:gap-10 md:gap-20">
-                        <div className="md:max-w-[400px] lg:max-w-[558px] mb-[5px]">
-                            <Heading className={'text-prime-gradient font-medium text-[42px] !leading-[63px]'} headText=
-                                "Pizza Nest" />
+                        <div className="md:max-w-[400px] lg:max-w-[558px] mb-[5px]">             
+                            <a href="#"
+                                className="text-gradient  font-medium text-[42px] !leading-[63px]"
+                           >Pizza Nest
+                            </a>
                             <Descritpion className="text-mid-gray pt-3" text="At Pizza Nest, we believe every slice should bring joy. Whether you're ordering for one or feeding a crowd, our pizzas are baked with care, topped with love, and delivered hot to your doorstep. You just taste the difference." />
                             <div className="flex items-center gap-5 mt-4 sm:mt-6">
                                 {SOCIAL_ICON.map((item, index) => (

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CustomButton from './common/CustomButton';
-import Heading from './common/Heading';
-import Nav_DATA from '../utils/helper'
+import {Nav_DATA} from '../utils/helper'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -19,10 +18,10 @@ const Header = () => {
     return (
         <header className="font-montserrat">
             <div className="max-w-[1440px] mx-auto flex justify-between items-center px-5 sm:px-10 md:pl-20 lg:pl-[150px] md:pr-20 lg:pr-[160px] my-[25px] relative w-full">
-                <Heading
+                <a href="#"
                     className="text-gradient  font-medium text-[34px]"
-                    headText="Pizza Nest"
-                />
+               >pizza Nest
+      </a>
                 <nav
                     className={`z-50 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} 
                    xl:flex items-center gap-4 xl:gap-8 xl:flex-row 
