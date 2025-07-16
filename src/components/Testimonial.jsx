@@ -82,7 +82,6 @@ const Testimonial = () => {
                                                 <span className="text-white group-hover:text-black transition-colors duration-300">
                                                     <RightArrow />
                                                 </span>}/>
-
                                     </div>
                                 </div>
                             </SwiperSlide>

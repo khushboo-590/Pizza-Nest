@@ -2,18 +2,11 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CustomButton from './common/CustomButton';
 import Heading from './common/Heading';
+import Nav_DATA from '../utils/helper'
 
 const Header = () => {
-    const navItems = [
-        { label: 'Home', path: '/' },
-        { label: 'Menu', path: '/menu' },
-        { label: 'Customize Pizza', path: '/customize' },
-        { label: 'Offers', path: '/offers' },
-        { label: 'About Us', path: '/about' },
-    ];
 
     const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleNavbar = () => {
         setMenuOpen(!menuOpen);
         document.documentElement.classList.toggle('overflow-hidden');
@@ -39,7 +32,7 @@ max-xl:min-h-screen max-xl:absolute max-xl:top-0 max-xl:right-0
 max-xl:w-full max-xl:bg-white`}
                 >
                     <ul className="flex flex-col lg:flex-row gap-6">
-                        {navItems.map((item, index) => (
+                        {Nav_DATA.map((item, index) => (
                             <li key={index} className="group">
                                 <NavLink
                                     to={item.path}
@@ -79,8 +72,8 @@ max-xl:w-full max-xl:bg-white`}
                     ></span>
                     <span
                         className={`w-[30px] h-[5px] rounded transition-all ${menuOpen
-                                ? 'bg-transparent'
-                                : 'bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]'
+                            ? 'bg-transparent'
+                            : 'bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]'
                             }`}
                     ></span>
                     <span
