@@ -1,66 +1,13 @@
-/* @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-
-:root {
-  --primary-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
-  --light-gray: #787878;
-  --dark-gray: #E1E1E1;
-  --light-white: #D5D5D5;
-  --dark-black: #4D4D4D;
-  --soft-black: #575757;
-  --light-orange: #FF902E;
-  --light-black: #373737;
-}
-
-body {
-font-family: "Nunito", sans-serif;
- 
-}
-
-.text-gradient {
-  background-image: var(--primary-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.bg-gradient {
-  background-image: var(--primary-gradient);
-}
-
-.light-gray {
-  color: var(--light-gray);
-}
-
-.dark-gray {
-  color: var(--dark-gray);
-}
-
-.light-white {
-  color: var(--light-white);
-}
-
-.dark-black {
-  color: var(--dark-black);
-}
-
-.soft-black {
-  color: var(--soft-black);
-}
-
-.light-orange {
-  background-color: var(--light-orange);
-}
-
-.light-black {
-  color: var(--light-black);
-} */
  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
  @import "tailwindcss";
 
  body,
  html {
    overflow-x: hidden !important;
+ }
+
+ * {
+   font-family: "Nunito", sans-serif;
  }
 
  @theme {
@@ -76,35 +23,6 @@ font-family: "Nunito", sans-serif;
    --color-unmuted-gray: #5C5C5C;
    --color-black: #010101;
    --color-prime-gradient: linear-gradient(85.95deg, #EC6112 1.54%, #FF902E 98.46%);
- }
-
- * {
-   font-family: "Nunito", sans-serif;
- }
-
- .bg-gradient {
-   background: var(--color-prime-gradient) !important;
- }
- .gradient-border-box {
-   padding: 2px;
-   border: var(--color-prime-gradient);
-   border-radius: 8px;
- }
-
- .bg-prime-hover:hover {
-   background: var(--color-prime-gradient) !important;
- }
-
- .text-gradient {
-   background: var(--color-prime-gradient);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
-
- .link-hover:hover a {
-   background: var(--color-prime-gradient);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
  }
 
  .btn-blur::after {
@@ -141,6 +59,23 @@ font-family: "Nunito", sans-serif;
    opacity: 0;
  }
 
+ .bg-gradient {
+   background: var(--color-prime-gradient) !important;
+ }
+
+ .gradient-border-box {
+   padding: 2px;
+   border: var(--color-prime-gradient);
+   border-radius: 8px;
+ }
+
+
  .bg-prime {
    background: var(--color-prime-gradient) !important;
+ }
+
+ .text-gradient {
+   background: var(--color-prime-gradient);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
  }

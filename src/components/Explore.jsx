@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { MENU_DATA } from "../utils/helper.js";
 import { Line, RatingSvg } from "../utils/icon.jsx";
@@ -6,12 +5,9 @@ import Heading from "./common/Heading";
 import CustomButton from "./common/CustomButton.jsx";
 import pizzaSlice from '../assets/images/png/pizza-slice-img.png';
 
-
 const categories = ["All", "Veg Pizzas", "Non-Veg Pizzas", "Combos & Drinks", "Sides & Dips"];
-
 const Explore = () => {
     const [activeCategory, setActiveCategory] = useState("All");
-
     const getTitleKey = (category) => {
         switch (category) {
             case "All": return "title1";
@@ -32,7 +28,7 @@ const Explore = () => {
                     <div className="">
                         <Line />
                     </div>
-                    <h4 className='text-gradient text-lg font-bold leading-[22px]'>Our Menu</h4>
+                    <h4 className='text-gradient text-lg font-bold leading-[22px]'>Menu us</h4>
                     <div className=" rotate-[180deg]">
                         <Line />
                     </div>
@@ -48,13 +44,12 @@ const Explore = () => {
         ${activeCategory === category
                                     ? "bg-prime text-white border-transparent"
                                     : "!bg-none !bg-white !text-light-gray !border-light-gray"
-                                }`}
-                        >
+                                }`}>
                             {category}
                         </CustomButton>
                     ))}
                 </div>
-                <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {MENU_DATA.map((item, i) => (
                         <div className="" key={i}>
                             <img className="object-cover w-full" src={item.image} alt="pizza" />
@@ -68,7 +63,6 @@ const Explore = () => {
                             </div>
                         </div>
                     ))}
-
                 </div>
                 <CustomButton className={' mt-4 lg:mt-8 !leading-[22px]'} btnText="View More" />
             </div>
@@ -77,3 +71,4 @@ const Explore = () => {
 };
 
 export default Explore;
+

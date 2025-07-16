@@ -26,7 +26,7 @@ const AboutUs = () => {
                             <div className="flex flex-wrap mt-6 gap-4 sm:gap-6 lg:max-h-[135px] max-lg:justify-center">
                                 {ABOUT_US_CARDS_DATA.map((item, index) => (
                                     <div className={`${index === 1 ? "sm:mt-3" : ""}`}>
-                                        <div key={index} className="bg-[#FEFEFE] border w-full min-w-[170px] max-w-[170px] h-[122px]   px-[18px] shadow-[0px_1px_7px_0px_#F67A211F] rounded-xl border-dashed gradient-border-box">
+                                        <div key={index} className="bg-[#FEFEFE] border w-full min-w-[160px] sm:max-w-[170px] sm:min-w-[170px] p-3 sm:p-4.5 shadow-[0px_1px_7px_0px_#F67A211F] rounded-xl border-dashed border-amber-500">
                                             <div className="bg-[#FCECE2] size-[52px] mx-auto rounded-full flex justify-center items-center mt-[18px]">{<item.img />}</div>
                                             <p className='leading-[160%] text-center whitespace-nowrap text-[#474747] pb-2'>{item.title}</p>
                                         </div>

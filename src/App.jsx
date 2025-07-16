@@ -20,18 +20,17 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Delicious/>
+      <Delicious />
       <Seller />
       <Explore />
       <Buy />
       <Delivery />
       <Work />
       <Testimonial />
-      <Gallery/>
+      <Gallery />
       <Craving />
       <Footer />
     </>
   )
 }
-
 export default App
