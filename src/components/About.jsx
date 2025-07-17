@@ -38,7 +38,7 @@ const AboutUs = () => {
                                 {ABOUT_US_CARDS_DATA.map((obj, index) => (
                                     <div className={`${index === 1 ? "sm:mt-3" : ""}`}>
                                         <div key={index} className="bg-[#FEFEFE] border w-full min-w-[160px] sm:max-w-[170px] sm:min-w-[170px] p-3 sm:p-4.5 shadow-[0px_1px_7px_0px_#F67A211F] rounded-xl border-dashed border-amber-500">
-                                            <div className="bg-[#FCECE2] size-[52px] mx-auto rounded-full flex justify-center items-center mt-[18px]">{<obj.img />}</div>
+                                            <div className="bg-[#FCECE2] size-[52px] mx-auto rounded-full flex justify-center items-center ">{<obj.img />}</div>
                                             <p className='leading-[160%] text-center whitespace-nowrap text-[#474747] pb-2'>{obj.title}</p>
                                         </div>
                                     </div>

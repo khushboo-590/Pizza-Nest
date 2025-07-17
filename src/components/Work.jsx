@@ -51,8 +51,7 @@ const Works = () => {
                                     src={leftArrow}
                                     alt="arrow"
                                     className="max-lg:mx-auto  h-[12px] w-[80px] md:rotate-0 rotate-90 top-8 xl:block hidden   left-50 lg:w-[191px] md:w-[140px] absolute "
-                                />
-                            )}
+                                />)}
                         </div>
                     ))}
                 </div>
@@ -60,5 +59,4 @@ const Works = () => {
         </section>
     );
 };
-
 export default Works;

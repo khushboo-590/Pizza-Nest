@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CustomButton from './common/CustomButton';
-import {Nav_DATA} from '../utils/helper'
+import { Nav_DATA } from '../utils/helper'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -19,24 +19,19 @@ const Header = () => {
         <header className="font-montserrat">
             <div className="max-w-[1440px] mx-auto flex justify-between items-center px-5 sm:px-10 md:pl-20 lg:pl-[150px] md:pr-20 lg:pr-[160px] my-[25px] relative w-full">
                 <a href="#"
-                    className="text-gradient  font-medium text-[34px]"
-               >pizza Nest
-      </a>
+                    className="text-gradient  font-medium text-2xl sm:text-[34px]">Pizza Nest
+                </a>
                 <nav
                     className={`z-50 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} 
-                   xl:flex items-center gap-4 xl:gap-8 xl:flex-row 
-max-xl:flex-col max-xl:justify-center max-xl:items-center 
-max-xl:min-h-screen max-xl:absolute max-xl:top-0 max-xl:right-0 
-max-xl:w-full max-xl:bg-white`}
-                >
-                    <ul className="flex flex-col lg:flex-row gap-6">
+                   xl:flex items-center gap-4 xl:gap-8 xl:flex-row  max-xl:flex-col max-xl:justify-center max-xl:items-center max-xl:min-h-screen max-xl:absolute max-xl:top-0 max-xl:right-0 max-xl:w-full max-xl:bg-white`}>
+                    <ul className="flex flex-col lg:flex-row gap-6 text-center">
                         {Nav_DATA.map((obj, index) => (
                             <li key={index} className="group">
                                 <NavLink
                                     to={obj.path}
                                     onClick={closeNavbar}
                                     className={({ isActive }) =>
-                                        `relative font-nunito text-base group-hover:!text-prime-gradient ${isActive ? 'text-gradient after:w-full' : 'text-muted-gray'}
+                                        `relative text-base group-hover:text-gradient ${isActive ? 'text-gradient after:w-full' : 'text-muted-gray'}
                                         after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full
                                         after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
                                         after:w-0 after:transition-all after:duration-300 group-hover:after:w-full`
@@ -61,21 +56,10 @@ max-xl:w-full max-xl:bg-white`}
                 </div>
                 <div
                     onClick={toggleNavbar}
-                    className="lg:hidden flex flex-col gap-[5px] z-50 cursor-pointer"
-                >
-                    <span
-                        className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${menuOpen ? 'rotate-[42deg] origin-left' : ''
-                            }`}
-                    ></span>
-                    <span
-                        className={`w-[30px] h-[5px] rounded transition-all ${menuOpen
-                            ? 'bg-transparent'
-                            : 'bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]'
-                            }`}
-                    ></span>
-                    <span
-                        className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${menuOpen ? '-rotate-[42deg] origin-left' : ''
-                            }`}
+                    className="lg:hidden flex flex-col gap-[5px] z-50 cursor-pointer">
+                    <span className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${menuOpen ? 'rotate-[42deg] origin-left' : ''}`}></span>
+                    <span className={`w-[30px] h-[5px] rounded transition-all ${menuOpen ? 'bg-transparent': 'bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]'}`}></span>
+                    <span className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${menuOpen ? '-rotate-[42deg] origin-left' : ''}`}
                     ></span>
                 </div>
             </div>

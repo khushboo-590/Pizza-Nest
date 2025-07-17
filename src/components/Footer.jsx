@@ -28,23 +28,19 @@ const Footer = () => {
                                     <li key={i} className="relative group mt-2 link-hover">
                                         <a
                                             href={link.path}
-                                            className="relative text-base text-mid-gray group-hover:text-prime-gradient transition-colors duration-300
+                                            className="relative text-base text-mid-gray transition-colors duration-300 hover:bg-gradient-to-r hover:from-[#EC6112] hover:to-[#FF902E] hover:text-transparent hover:bg-clip-text
         after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full
         after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
-        after:w-0 group-hover:after:w-full after:transition-all after:duration-300"
-                                        >
+        after:w-0 group-hover:after:w-full after:transition-all after:duration-300">
                                             {link.label}
                                         </a>
                                     </li>
                                 ))}
-
-
                             </ul>
                             <ul>
                                 <li className='text-black leading-[160%] mb-1'>Support</li>
                                 {SUPPORT_LINKS.map((link, i) => (
-                                    <li className='relative group mt-2 link-hover' key={i}> <a className='text-mid-gray leading-[160%] relative text-base group-hover:text-prime-gradient after:content-[""] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
-                  after:w-0 after:transition-all after:duration-300 group-hover:after:w-full' href="">{link}</a></li>
+                                    <li className='relative group mt-2 link-hover' key={i}> <a className=' text-base text-mid-gray transition-colors duration-300 hover:bg-gradient-to-r hover:from-[#EC6112] hover:to-[#FF902E] hover:text-transparent hover:bg-clip-text after:content-[""] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max after:w-0 after:transition-all after:duration-300 group-hover:after:w-full' href="">{link}</a></li>
                                 ))}
                             </ul>
                         </div>

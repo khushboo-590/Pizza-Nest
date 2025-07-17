@@ -6,7 +6,7 @@ import line from './../assets/images/png/delivery-line.png'
 import Heading from './common/Heading'
 import { DELIVERY__DATA } from '../utils/helper'
 import CustomButton from './common/CustomButton'
-import Description from './common/Descritpion'
+import Descritpion from './common/Descritpion'
 import tamatoImg from '../assets/images/png/tamato-img.png'
 
 const Delivery = () => {
@@ -24,17 +24,17 @@ const Delivery = () => {
                 <div className='flex -mx-3 flex-wrap lg:flex-row flex-col-reverse lg:gap-0 gap-7'>
                     <div className='lg:w-1/2 w-full px-3 ' data-aos="zoom-in" >
                         <div className='flex items-center gap-[6px]'>
-                            <Description className={'!font-bold !text-[18px] !leading-[120%] text-gradient'} text="Food Delivery" />
+                            <Descritpion className={'!font-bold !text-[18px] !leading-[120%] text-gradient'} text="Food Delivery" />
                             <img src={line} alt="line" className='w-[60px] h-[1px]' />
                         </div>
                         <Heading className={'text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl w-ful  lg:max-w-[463px]'}
                             headText="Fast, Fresh & Always On Time" />
-                        <Description className={'text-[#373737] mb-3 font-normal mt-[15px] w-full lg:max-w-[463px]'} text="We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away." />
+                        <Descritpion className={'text-[#373737] mb-3 font-normal mt-[15px] w-full lg:max-w-[463px]'} text="We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away." />
                         <div className='flex flex-col gap-[8px] max-lg:grid max-lg:grid-cols-2  mt-10'>
                             {DELIVERY__DATA.map((obj, index) => (
                                 <div key={index} className='flex gap-[6px]'>
                                     <obj.icon />
-                                    <Description className={'font-normal text-[#373737]'} text={obj.info} />
+                                    <Descritpion className={'font-normal text-[#373737]'} text={obj.info} />
                                 </div>
                             ))}
                         </div>

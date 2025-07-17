@@ -66,7 +66,6 @@ const Explore = () => {
                         </div>
                     ))}
                 </div>
-
                 <CustomButton className={' mt-4 lg:mt-8 !leading-[22px]'} btnText="View More" />
             </div>
         </div>

@@ -65,7 +65,7 @@ const Gallery = () => {
                         {[GALLERY_DATA.leftCol, GALLERY_DATA.rightCol].map((group, groupIdx) => (
                             <div key={groupIdx} className="flex flex-col gap-4 w-full max-w-[267px]">
                                 {group.map((img, i) => (
-                                    <img key={i} src={img} alt={`mobile-col-${groupIdx}-${i}`} className="object-cover rounded-xl pointer-events-none" />
+                                    <img key={i} src={img} alt="img" className="object-cover rounded-xl pointer-events-none" />
                                 ))}
                             </div>
                         ))}

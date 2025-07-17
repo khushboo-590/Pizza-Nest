@@ -8,7 +8,7 @@ import Heading from './common/Heading'
 const Hero = () => {
     return (
         <div className='max-w-[1440px] bg-dark-white sm:px-10 px-5 w-full mx-auto'>
-            <div className="bg-[url(./assets/images/png/hero-bg-img.png)] relative bg-no-repeat bg-center bg-cover flex flex-col items-center w-full md:min-h-[710px] rounded-3xl  px-5">
+            <div className="bg-[url(./assets/images/png/hero-bg-img.png)] relative bg-no-repeat bg-center bg-cover flex flex-col items-center w-full min-h-[500px] md:min-h-[610px] lg:min-h-[710px] rounded-3xl px-5">
                 <div className="max-w-[593px] w-full md:absolute mt-8 sm:mt-10 md-:mt20 lg:mt-[127px] xl:left-[110px] left-[75px] mb-10 sm:mb-20 md:mt-30 lg:mb-[188px]">
                     <Heading className="font-bold !leading-[120%]  text-[32px] sm:text-[40px] md:text-[48px] lg:text-[64px] text-white"
                         headText="Where Every Slice Feels Like Home"/>
