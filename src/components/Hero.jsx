@@ -20,13 +20,13 @@ const Hero = () => {
                     </div>
                     <div className="flex flex-col gap-y-2 sm:flex-row items-center">
                         <div className="max-w-[155px] w-full">
-                            <h4 className='font-nunito mb-[2px] font-semibold text-2xl text-white w-full text-center leading-[34px]' >5,000+</h4>
-                            <p className='font-semibold font-nunito text-base text-center text-lighter-gray leading-[120%] w-full'> Pizzas Delivered</p>
+                            <h4 className=' mb-[2px] font-semibold text-2xl text-white w-full text-center leading-[34px]' >5,000+</h4>
+                            <p className='font-semibold  text-base text-center text-lighter-gray leading-[120%] w-full'> Pizzas Delivered</p>
                         </div>
                         <div className="border border-[#D5D5D5] sm:h-[39px] max-sm:w-full "></div>
                         <div className="max-w-[155px] w-full">
-                            <h4 className='font-nunito mb-[2px] font-semibold text-2xl text-white w-full text-center leading-[34px]'>98%</h4>
-                            <p className='font-semibold font-nunito text-base text-center text-lighter-gray leading-[120%] w-full'> Happy Customers</p>
+                            <h4 className=' mb-[2px] font-semibold text-2xl text-white w-full text-center leading-[34px]'>98%</h4>
+                            <p className='font-semibold  text-base text-center text-lighter-gray leading-[120%] w-full'> Happy Customers</p>
                         </div>
                     </div>
                 </div>

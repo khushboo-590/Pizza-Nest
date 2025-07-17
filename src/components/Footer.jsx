@@ -33,10 +33,7 @@ const Footer = () => {
                                     <li key={i} className="relative group mt-2 link-hover">
                                         <a
                                             href={link.path}
-                                            className="relative text-base text-mid-gray transition-colors duration-300 hover:bg-gradient-to-r hover:from-[#EC6112] hover:to-[#FF902E] hover:text-transparent hover:bg-clip-text
-        after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full
-        after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max
-        after:w-0 group-hover:after:w-full after:transition-all after:duration-300">
+                                            className="relative text-base text-mid-gray transition-colors duration-300 hover:bg-gradient-to-r hover:from-[#EC6112] hover:to-[#FF902E] hover:text-transparent hover:bg-clip-text after:content-[''] after:absolute after:left-0 after:bottom-[4px] after:h-[1px] after:rounded-full after:bg-[linear-gradient(85.95deg,#EC6112_1.54%,#FF902E_98.46%)] max-w-max after:w-0 group-hover:after:w-full after:transition-all after:duration-300">
                                             {link.label}
                                         </a>
                                     </li>

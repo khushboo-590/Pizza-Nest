@@ -38,10 +38,9 @@ const Explore = () => {
                             key={i}
                             btnText={category}
                             onClick={() => setActiveCategory(category)}
-                            className={`!px-5 !py-[9px] max-w-[170px] !leading-[22px] w-full rounded-full border text-base
-        ${activeCategory === category
-                                    ? "bg-prime text-white border-transparent"
-                                    : "!bg-none !bg-white !text-light-gray !border-light-gray"
+                            className={`!px-5 !py-[9px] max-w-[170px] !leading-[22px] w-full rounded-full border text-base ${activeCategory === category
+                                ? "bg-prime text-white border-transparent"
+                                : "!bg-none !bg-white !text-light-gray !border-light-gray"
                                 }`}>
                             {category}
                         </CustomButton>
@@ -58,7 +57,7 @@ const Explore = () => {
                                 </h4>
                                 <p className="text-base text-unmuted-gray leading-[160%] text-center px-2 mb-1">{obj.desc}</p>
                                 <div className="flex justify-center items-center">
-                                    <RatingSvg/>
+                                    <RatingSvg />
                                 </div>
                             </div>
                         </div>

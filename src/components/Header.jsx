@@ -51,25 +51,17 @@ const Header = () => {
                 <div className="hidden lg:flex">
                     <CustomButton
                         className="hover:!bg-none hover:border-dark-gray border hover:text-dark-gray hover:!scale-100 active:!scale-90"
-                        btnText="Contact Us"
-                    />
+                        btnText="Contact Us" />
                 </div>
                 <div
                     onClick={toggleNavbar}
-                    className="lg:hidden flex flex-col gap-[6px] z-50 cursor-pointer transition-all duration-300 ease-in-out"
-                >
+                    className="lg:hidden flex flex-col gap-[6px] z-50 cursor-pointer transition-all duration-300 ease-in-out">
                     <span
-                        className={`w-[30px] h-[4px] rounded bg-gradient-to-r from-[#EC6112] to-[#FF902E] 
-    ${menuOpen ? 'rotate-45 translate-y-[11px]' : ''}`}
-                    ></span>
+                        className={`w-[30px] h-[4px] rounded bg-gradient-to-r from-[#EC6112] to-[#FF902E] ${menuOpen ? 'rotate-45 translate-y-[11px]' : ''}`}></span>
                     <span
-                        className={`w-[30px] h-[4px] rounded transition-all duration-300 ease-in-out
-    ${menuOpen ? 'opacity-0' : 'bg-gradient-to-r from-[#EC6112] to-[#FF902E]'}`}
-                    ></span>
+                        className={`w-[30px] h-[4px] rounded transition-all duration-300 ease-in-out ${menuOpen ? 'opacity-0' : 'bg-gradient-to-r from-[#EC6112] to-[#FF902E]'}`}></span>
                     <span
-                        className={`w-[30px] h-[4px] rounded bg-gradient-to-r from-[#EC6112] to-[#FF902E] 
-    ${menuOpen ? '-rotate-45 -translate-y-[9px]' : ''}`}
-                    ></span>
+                        className={`w-[30px] h-[4px] rounded bg-gradient-to-r from-[#EC6112] to-[#FF902E] ${menuOpen ? '-rotate-45 -translate-y-[9px]' : ''}`}></span>
                 </div>
             </div>
         </div>
