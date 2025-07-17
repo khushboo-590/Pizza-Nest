@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { MENU_DATA } from "../utils/helper.js";
@@ -11,19 +11,17 @@ const categories = ["All", "Veg Pizzas", "Non-Veg Pizzas", "Combos & Drinks", "S
 const Explore = () => {
     useEffect(() => {
         AOS.init({
-            duration: 1000,     
+            duration: 1000,
             easing: 'ease-in-out',
-            offset: 100,         
-            once: true,         
+            offset: 100,
+            once: true,
         });
     }, []);
     const [activeCategory, setActiveCategory] = useState("All");
     return (
-        <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 relative">
+        <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 relative max-w-[1920px] mx-auto">
             <img className='absolute pointer-events-none left-0 top-0 max-w-[90px] md:max-w-[140px] lg:max-w-[195px] animate-bounce' src={pizzaSlice} alt="pizza-slice" />
-
-            <div className='flex justify-center items-center flex-col mx-auto  max-w-[1140px] ' data-aos="slide-up"
->
+            <div className='flex justify-center items-center flex-col mx-auto  max-w-[1140px] ' data-aos="slide-up">
                 <div className=" flex justify-center items-center gap-1.5 mb-2 max-w-[1140px] mx-auto">
                     <div className="">
                         <Line />

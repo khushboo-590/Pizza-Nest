@@ -18,7 +18,7 @@ const Works = () => {
         });
     }, []);
     return (
-        <section className="py-8 sm:py-10 md:py-20 lg:py-25 px-5 max-w-[1140px] mx-auto font-montserrat">
+        <div className="py-8 sm:py-10 md:py-20 lg:py-25 px-5 max-w-[1140px] mx-auto ">
             <div className="flex justify-center items-center gap-1.5">
                 <Line />
                 <h4 className="text-gradient text-lg font-bold">How It Works</h4>
@@ -56,7 +56,7 @@ const Works = () => {
                     ))}
                 </div>
            </div>
-        </section>
+        </div>
     );
 };
 export default Works;

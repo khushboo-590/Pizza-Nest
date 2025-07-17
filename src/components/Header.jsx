@@ -16,7 +16,7 @@ const Header = () => {
     };
 
     return (
-        <header className="font-montserrat">
+        <div className="max-w-[1920px] mx-auto">
             <div className="max-w-[1440px] mx-auto flex justify-between items-center px-5 sm:px-10 md:pl-20 lg:pl-[150px] md:pr-20 lg:pr-[160px] my-[25px] relative w-full">
                 <a href="#"
                     className="text-gradient  font-medium text-2xl sm:text-[34px]">Pizza Nest
@@ -56,14 +56,23 @@ const Header = () => {
                 </div>
                 <div
                     onClick={toggleNavbar}
-                    className="lg:hidden flex flex-col gap-[5px] z-50 cursor-pointer">
-                    <span className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${menuOpen ? 'rotate-[42deg] origin-left' : ''}`}></span>
-                    <span className={`w-[30px] h-[5px] rounded transition-all ${menuOpen ? 'bg-transparent': 'bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)]'}`}></span>
-                    <span className={`w-[30px] h-[5px] bg-[linear-gradient(85.95deg,_#EC6112_1.54%,_#FF902E_98.46%)] rounded transition-all ${menuOpen ? '-rotate-[42deg] origin-left' : ''}`}
+                    className="lg:hidden flex flex-col gap-[6px] z-50 cursor-pointer transition-all duration-300 ease-in-out"
+                >
+                    <span
+                        className={`w-[30px] h-[4px] rounded bg-gradient-to-r from-[#EC6112] to-[#FF902E] 
+    ${menuOpen ? 'rotate-45 translate-y-[11px]' : ''}`}
+                    ></span>
+                    <span
+                        className={`w-[30px] h-[4px] rounded transition-all duration-300 ease-in-out
+    ${menuOpen ? 'opacity-0' : 'bg-gradient-to-r from-[#EC6112] to-[#FF902E]'}`}
+                    ></span>
+                    <span
+                        className={`w-[30px] h-[4px] rounded bg-gradient-to-r from-[#EC6112] to-[#FF902E] 
+    ${menuOpen ? '-rotate-45 -translate-y-[9px]' : ''}`}
                     ></span>
                 </div>
             </div>
-        </header>
+        </div>
     );
 };
 

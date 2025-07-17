@@ -18,7 +18,7 @@ const Gallery = () => {
         });
     }, []);
     return (
-        <div className='px-5  py-8 sm:py-10 md:py-20 lg:py-25 relative'>
+        <div className='px-5  py-8 sm:py-10 md:py-20 lg:py-25 relative max-w-[1920px] mx-auto'>
             <img className='absolute pointer-events-none right-0 -top-10 max-w-[90px] md:max-w-[140px] lg:max-w-[195px]  animate-bounce' src={pizzaRightImg} alt="pizza-slice" />
             <div className='flex justify-center items-center flex-col max-w-[1140px] mx-auto'>
                 <div className="flex justify-center items-center gap-1.5 mb-2">

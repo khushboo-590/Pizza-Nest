@@ -17,7 +17,7 @@ const Seller = () => {
     }, []);
     return (
         <>
-            <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 bg-[url(src/assets/images/png/common-bg-img.png)] bg-no-repeat bg-cover bg-center">
+            <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 bg-[url(src/assets/images/png/common-bg-img.png)] bg-no-repeat bg-cover bg-center max-w-[1920px] mx-auto">
                 <div className='max-w-[1140px] w-full mx-auto'>
                     <div className=" flex justify-center items-center gap-1.5">
                         <div className="">

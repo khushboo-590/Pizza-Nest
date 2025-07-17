@@ -6,7 +6,7 @@ import Descritpion from './common/Descritpion';
 const Craving = () => {
     return (
         <>
-            <div className="bg-[url(src/assets/images/png/Craving-bg-img.png)] bg-cover bg-center bg-no-repeat px-5 relative">
+            <div className="bg-[url(src/assets/images/png/Craving-bg-img.png)] bg-cover bg-center bg-no-repeat px-5 relative max-w-[1920px] mx-auto">
                 <div className=" py-8 sm:py-10 md:py-15 lg:py-20 relative z-1">
                     <Heading className="mx-auto  !leading-[120%] !text-light-white text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl font-semibold text-center max-w-[722px]" headText="Craving something cheesy, spicy, or just straight-up delicious" />
                     <Descritpion className="text-white-gray max-w-[465px] text-center mx-auto pt-4" text="Your next favorite pizza is waiting. Freshly baked, flavor-packed, and delivered hot to your door — every single time." />

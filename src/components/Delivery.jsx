@@ -18,7 +18,7 @@ const Delivery = () => {
         once: true,
     });
     return (
-        <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 bg-[url(src/assets/images/png/common-bg-img.png)] bg-no-repeat bg-cover bg-center relative ">
+        <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 bg-[url(src/assets/images/png/common-bg-img.png)] bg-no-repeat bg-cover bg-center relative max-w-[1920px] mx-auto ">
             <img className='absolute pointer-events-none left-0 bottom-[-90px]  lg:block hidden lg:max-w-[300px] xl:max-w-[420px] animate-bounce rotate-180' src={tamatoImg} alt="pizza-slice" />          
             <div className=' max-w-[1140px] mx-auto'>
                 <div className='flex -mx-3 flex-wrap lg:flex-row flex-col-reverse lg:gap-0 gap-7'>
@@ -30,7 +30,7 @@ const Delivery = () => {
                         <Heading className={'text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl w-ful  lg:max-w-[463px]'}
                             headText="Fast, Fresh & Always On Time" />
                         <Descritpion className={'text-[#373737] mb-3 font-normal mt-[15px] w-full lg:max-w-[463px]'} text="We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away." />
-                        <div className='flex flex-col gap-[8px] max-lg:grid max-lg:grid-cols-2  mt-10'>
+                        <div className='flex flex-col gap-[8px] max-lg:grid max-lg:grid-cols-2  mt-3'>
                             {DELIVERY__DATA.map((obj, index) => (
                                 <div key={index} className='flex gap-[6px]'>
                                     <obj.icon />

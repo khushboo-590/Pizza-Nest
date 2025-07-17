@@ -18,7 +18,7 @@ const AboutUs = () => {
     }, [])
     return (
         <>
-            <div className="px-5 bg-[url(src/assets/images/png/common-bg-img.png)] bg-no-repeat bg-cover bg-center p-8 sm:pt-10 md:pt-15 py:pt-25 pb-8 md:pb-[49px] relative">
+            <div className="px-5 bg-[url(src/assets/images/png/common-bg-img.png)] bg-no-repeat bg-cover bg-center p-8 sm:pt-10 md:pt-15 py:pt-25 pb-8 md:pb-[49px] relative max-w-[1920px] mx-auto">
                 <img className='absolute pointer-events-none left-0 bottom-0 max-xl:w-full max-xl:max-w-[150px] animate-bounce' src={pizzaSlice} alt="pizza-slice" />
                 <div className="max-w-[1114px] mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between lg:min-h-[637px]">

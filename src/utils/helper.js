@@ -1,4 +1,3 @@
-
 import galleryImg1 from '../assets/images/png/gallery-img-1.png';
 import galleryImg2 from '../assets/images/png/gallery-img-2.png';
 import galleryImg3 from '../assets/images/png/gallery-img-3.png';
@@ -12,9 +11,6 @@ import pizzaImg3 from "../assets/images/png/best-seller-img-3.png";
 import pizzaImg4 from "../assets/images/png/best-seller-img-4.png";
 import limitedImg1 from "../assets/images/png/limited-offer-pizza-1.png";
 import limitedImg2 from "../assets/images/png/limited-offer-pizza-2.png";
-import exploreImg1 from '../assets/images/png/explore-img-1.png'
-import exploreImg2 from '../assets/images/png/explore-img-2.png'
-import exploreImg3 from '../assets/images/png/explore-img-2.png'
 import ourMenuPizza1 from "../assets/images/png/our-menu-pizza-1.png";
 import ourMenuPizza2 from "../assets/images/png/our-menu-pizza-2.png";
 import ourMenuPizza3 from "../assets/images/png/our-menu-pizza-3.png";
@@ -23,7 +19,7 @@ import avatar2 from "../assets/images/png/test-img-2.png";
 import avatar3 from "../assets/images/png/test-img-3.png";
 import { Check, ChefSvg, FacebookSvg, QualitySvg, SupportSvg, InstaSvg, LinkdinSvg, Pizza, Order, Track } from "./icon";
 
-export const Nav_DATA=[
+export const Nav_DATA = [
     { label: 'Home', path: '/' },
     { label: 'Menu', path: '/menu' },
     { label: 'Customize Pizza', path: '/customize' },
@@ -111,14 +107,12 @@ export const DELIVERY__DATA = [
 
 ]
 
-
 export const GALLERY_DATA = {
     leftCol: [galleryImg1, galleryImg4],
     centerTop: [galleryImg2],
     centerBottom: [galleryImg5, galleryImg6],
     rightCol: [galleryImg3, galleryImg7],
 };
-
 
 export const LIMITED_DATA = [
     {
@@ -280,7 +274,6 @@ export const SOCIAL_ICON = [
     }
 ]
 
-
 export const QUICK_LINKS = [
     { label: 'Home', path: '/' },
     { label: 'About Us', path: '/about-us' },
@@ -290,7 +283,6 @@ export const QUICK_LINKS = [
     { label: 'Contact', path: '/contact' },
 
 ];
-
 
 export const SUPPORT_LINKS = [
     "Terms & Conditions", "Privacy Policy"

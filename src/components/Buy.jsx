@@ -16,7 +16,7 @@ const Buy = () => {
     }, []);
     return (
         <>
-            <div className="bg-[url(src/assets/images/png/tasty-bg-img.png)] bg-cover px-5 lg:h-[400px]">
+            <div className="bg-[url(src/assets/images/png/tasty-bg-img.png)] bg-cover px-5 lg:h-[400px] max-w-[1920px] mx-auto">
                 <div className="max-w-[1194px] mx-auto">
                     <div className="pt-[17px] pb-[33px] flex max-sm:flex-wrap justify-center gap-5 lg:gap-[44px] items-center">
                         <div className="md:max-w-[400px] lg:max-w-[597px]" data-aos="slide-left"

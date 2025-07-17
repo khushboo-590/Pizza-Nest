@@ -6,7 +6,7 @@ import Descritpion from './common/Descritpion'
 const Footer = () => {
     return (
         <>
-            <div className="px-5  pt-8 md:pt-10 lg:pt-20">
+            <div className="px-5  pt-8 md:pt-10 lg:pt-20 max-w-[1920px] mx-auto">
                 <div className="max-w-[1140px] mx-auto">
                     <div className="flex max-md:flex-col justify-between gap-8 sm:gap-10 md:gap-20">
                         <div className="md:max-w-[400px] lg:max-w-[558px] mb-[5px]">             
