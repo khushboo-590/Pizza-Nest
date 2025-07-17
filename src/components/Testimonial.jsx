@@ -68,7 +68,7 @@ const Testimonial = () => {
                         className="lg:!absolute bottom-0 right-0 max-w-[680px] w-full">
                         {TESTIMONIALS_DATA.map((obj, index) => (
                             <SwiperSlide key={index}>
-                                <div className="bg-white rounded-xl shadow-lg p-6 w-full relative h-[298px] mt-2">
+                                <div className="bg-white rounded-[12px] shadow-lg p-6 w-full relative h-[298px] mt-2">
                                     <Descritpion
                                         className="text-[#545454]"
                                         text={obj.text}
