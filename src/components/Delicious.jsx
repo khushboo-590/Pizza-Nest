@@ -8,13 +8,15 @@ import CustomButton from './common/CustomButton';
 import tamatoImg from '../assets/images/png/tamato-img.png'
 
 const Delicious = () => {
-      AOS.init({
+      useEffect(() => {   
+        AOS.init({
             offset: 100,
             duration: 1000,     
             easing: 'ease-in-out',
             delay: 0,
             once: true,
         });
+            }, []);
     return (
         <>
             <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 relative max-w-[1920px] mx-auto">

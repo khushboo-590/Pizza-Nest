@@ -10,6 +10,7 @@ import Descritpion from './common/Descritpion'
 import tamatoImg from '../assets/images/png/tamato-img.png'
 
 const Delivery = () => {
+        useEffect(() => {   
     AOS.init({
         offset: 100,
         duration: 1000,     
@@ -17,6 +18,7 @@ const Delivery = () => {
         delay: 0,
         once: true,
     });
+        }, []);
     return (
         <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 bg-[url(src/assets/images/png/common-bg-img.png)] bg-no-repeat bg-cover bg-center relative max-w-[1920px] mx-auto ">
             <img className='absolute pointer-events-none left-0 bottom-[-90px]  lg:block hidden lg:max-w-[300px] xl:max-w-[420px] animate-bounce rotate-180' src={tamatoImg} alt="pizza-slice" />          

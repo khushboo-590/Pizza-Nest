@@ -11,7 +11,7 @@ const categories = ["All", "Veg Pizzas", "Non-Veg Pizzas", "Combos & Drinks", "S
 const Explore = () => {
     useEffect(() => {
         AOS.init({
-            duration: 1000,
+            duration: 800,
             easing: 'ease-in-out',
             offset: 100,
             once: true,
