@@ -11,13 +11,18 @@ const Footer = () => {
                     <div className="flex max-md:flex-col justify-between gap-8 sm:gap-10 md:gap-20">
                         <div className="md:max-w-[400px] lg:max-w-[558px] mb-[5px]">             
                             <a href="#"
-                                className="text-gradient  font-medium text-[42px] !leading-[63px]"
-                           >Pizza Nest
+                                className="text-gradient  font-medium text-[42px] !leading-[63px]">Pizza Nest
                             </a>
                             <Descritpion className="text-mid-gray pt-3" text="At Pizza Nest, we believe every slice should bring joy. Whether you're ordering for one or feeding a crowd, our pizzas are baked with care, topped with love, and delivered hot to your doorstep. You just taste the difference." />
                             <div className="flex items-center gap-5 mt-4 sm:mt-6">
                                 {SOCIAL_ICON.map((item, index) => (
-                                    <a key={index} className='size-[52px] bg-prime rounded-full flex justify-center items-center' href={item.socialLink}>{<item.icon />}</a>
+                                    <a
+                                        key={index}
+                                        href={item.socialLink}
+                                        className="size-[52px] bg-prime rounded-full flex justify-center items-center hover:scale-110 transition-transform duration-300"
+                                    >
+                                        <item.icon />
+                                    </a>
                                 ))}
                             </div>
                         </div>
