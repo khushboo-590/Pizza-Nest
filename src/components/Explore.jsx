@@ -58,7 +58,7 @@ const Explore = () => {
                                 </h4>
                                 <p className="text-base text-unmuted-gray leading-[160%] text-center px-2 mb-1">{obj.desc}</p>
                                 <div className="flex justify-center items-center">
-                                    <RatingSvg />
+                                    <RatingSvg/>
                                 </div>
                             </div>
                         </div>
@@ -69,6 +69,5 @@ const Explore = () => {
         </div>
     );
 };
-
 export default Explore;
 
