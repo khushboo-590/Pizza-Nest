@@ -38,7 +38,7 @@ const Seller = () => {
                                     <h3 className='text-gradient font-semibold text-[32px] leading-[140%]'>{obj.price}</h3>
                                 </div>
                                 <p className="font-semibold text-[#010101] text-[28px] pt-[2px] text-center leading-[140%] whitespace-nowrap">{obj.title}</p>
-                                <p className='leading-[160%] text-[#5C5C5C] text-center pt-[2px]'>{obj.description}</p>
+                                <p className='leading-[160%] text-[#373737] text-center pt-[2px]'>{obj.description}</p>
                                 <div className="flex justify-center mt-3">
                                     <CustomButton className="px-[16.5px] py-[9px]" btnText="order Now"/>
                                 </div>
