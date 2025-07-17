@@ -22,10 +22,10 @@ const Delicious = () => {
                                     <p className='text-xl leading-[160%] text-[#E9E9E9]'>Limited Time</p>
                                     <CustomButton className="!py-2.5 !px-4 !leading-[22px] mt-4" btnText="Order Now"/>
                                 </div>
-                                <img className='sm:absolute max-sm:ml-auto right-0 bottom-0 max-sm:max-w-[250px]' src={obj.img} alt="pizza-img" />
+                                <img className='sm:absolute max-sm:ml-auto right-0 bottom-0 max-sm:max-w-[250px] pointer-events-none' src={obj.img} alt="pizza-img" />
                                 <div className="absolute top-23 sm:top-[7px] right-2 sm:right-[49px]">
-                                    <img className='sm:flex hidden' src={cloudImg} alt="cloud-img" />
-                                    <img className='flex sm:hidden' src={singleCloudImg} alt="cloud-img" />
+                                    <img className='sm:flex hidden pointer-events-none' src={cloudImg} alt="cloud-img" />
+                                    <img className='flex sm:hidden pointer-events-none' src={singleCloudImg} alt="cloud-img" />
                                     <div className="absolute top-5 sm:top-[27px] right-8 sm:right-[35px]">
                                         <p className='text-white text-center leading-[160%]'>{obj.text}</p>
                                         <p className='uppercase text-2xl text-center leading-[140%] text-white'>{obj.price}</p>

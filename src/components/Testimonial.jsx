@@ -10,7 +10,7 @@ import { LeftArrow, Line, RightArrow } from "../utils/icon";
 import pizzaImg from "../assets/images/png/testimonial-img.png";
 import { TESTIMONIAL_AVATAR, TESTIMONIALS_DATA } from "../utils/helper";
 import CustomButton from "./common/CustomButton";
-import Description from "./common/Descritpion";
+import Descritpion from "./common/Descritpion";
 
 const Testimonial = () => {
     useEffect(() => {
