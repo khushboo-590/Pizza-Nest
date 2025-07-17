@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Heading from './common/Heading';
 import { Line } from '../utils/icon';
 import { GALLERY_DATA } from '../utils/helper';
@@ -7,9 +9,17 @@ import pizzaRightImg from '../assets/images/png/gallery-pizza-img.png';
 
 
 const Gallery = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out',
+        });
+    }, []);
     return (
         <div className='px-5  py-8 sm:py-10 md:py-20 lg:py-25 relative'>
-            <img className='absolute pointer-events-none right-0 -top-10 max-w-[90px] md:max-w-[140px] lg:max-w-[195px]  animate-bounce' src={pizzaRightImg} alt="pizza-slice" />          
+            <img className='absolute pointer-events-none right-0 -top-10 max-w-[90px] md:max-w-[140px] lg:max-w-[195px]  animate-bounce' src={pizzaRightImg} alt="pizza-slice" />
             <div className='flex justify-center items-center flex-col max-w-[1140px] mx-auto'>
                 <div className="flex justify-center items-center gap-1.5 mb-2">
                     <Line />
@@ -20,7 +30,7 @@ const Gallery = () => {
                     className="text-center mt-2 text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl !leading-[120%] mb-6 md:mb-8 lg:mb-10 max-w-[550px] w-full"
                     headText="A Glimpse Into Our Pizza World"
                 />
-                <div className="flex xl:flex-row flex-col items-center md:gap-6 gap-4">
+                <div className="flex xl:flex-row flex-col items-center md:gap-6 gap-4" data-aos-delay="200" data-aos="zoom-in">
                     <div className="xl:flex hidden flex-col gap-4 w-full max-w-[267px]">
                         {GALLERY_DATA.leftCol.map((img, i) => (
                             <img key={i} src={img} alt={`left-${i}`} className="object-cover rounded-xl pointer-events-none" />

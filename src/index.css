@@ -79,3 +79,16 @@
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
  }
+ @keyframes slow-spin {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ .spin-slow {
+   animation: slow-spin 5s linear infinite;
+ }

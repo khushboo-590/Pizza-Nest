@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { HOW_IT_WORKS_DATA } from '../utils/helper';
 import CustomButton from './common/CustomButton';
 import Description from './common/Descritpion';
@@ -7,6 +9,14 @@ import { Line } from '../utils/icon';
 import leftArrow from './../assets/images/svg/arrow.svg'
 
 const Works = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 100,
+            easing: 'ease-in-out',
+            delay: 0,
+            once: true,
+        });
+    }, []);
     return (
         <section className="py-8 sm:py-10 md:py-20 lg:py-25 px-5 max-w-[1140px] mx-auto font-montserrat">
             <div className="flex justify-center items-center gap-1.5">
@@ -17,7 +27,8 @@ const Works = () => {
             <Heading
                 className="font-semibold text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl text-center max-w-[569px] mx-auto my-6"
                 headText="Your Perfect Pizza in Just 3 Easy Steps!"/>
-            <div className="flex md:flex-row flex-col justify-center items-center gap-6">
+            <div className="flex md:flex-row flex-col justify-center items-center gap-6" data-aos="fade-up"
+                data-aos-duration="1000">
                 <div className="flex md:flex-row flex-col justify-center items-center gap-6 flex-wrap">
                     {HOW_IT_WORKS_DATA.map(({ id, icon: Icon, title, desc }, index) => (
                         <div key={id} className='relative '>

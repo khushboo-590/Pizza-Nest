@@ -193,13 +193,13 @@ export const MENU_DATA = {
         {
             title: "Paneer Paradise",
             price: "₹249",
-            desc: "Spicy paneer cubes and onions",
+            desc: "Spicy paneer cubes and onions & mozzarella cheese",
             image: ourMenuPizza1,
         },
         {
             title: "Corn Treat",
             price: "₹219",
-            desc: "Golden corn and cheese",
+            desc: "Golden corn and cheese & mozzarella cheese",
             image: ourMenuPizza2,
         }
     ],

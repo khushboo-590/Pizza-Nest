@@ -14,21 +14,21 @@ const Delicious = () => {
                 <img className='absolute pointer-events-none right-0 bottom-0   lg:block hidden lg:max-w-[300px] xl:max-w-[420px] animate-bounce' src={tamatoImg} alt="pizza-slice" />             
                 <div className="max-w-[1140px] mx-auto">
                     <div className="flex max-lg:flex-wrap gap-6 items-center">
-                        {LIMITED_DATA.map((item, index) => (
+                        {LIMITED_DATA.map((obj, index) => (
                             <div className="max-w-[700px] mx-auto lg:max-w-[558px] relative w-full min-h-[319px] pl-4 sm:pl-8 py-8 md:py-10 lg:py-[63px] rounded-xl bg-[url(./assets/images/png/limited-offer-bg-img.png)] bg-cover bg-center bg-no-repeat" key={index}>
                                 <div className="z-1 relative lg:max-w-max">
                                     <h5 className='text-[28px] leading-[160%] text-gradient'>Delicious</h5>
-                                    <h2 className='text-white text-[28px] sm:text-4xl font-semibold leading-[160%]'>{item.title}</h2>
+                                    <h2 className='text-white text-[28px] sm:text-4xl font-semibold leading-[160%]'>{obj.title}</h2>
                                     <p className='text-xl leading-[160%] text-[#E9E9E9]'>Limited Time</p>
                                     <CustomButton className="!py-2.5 !px-4 !leading-[22px] mt-4" btnText="Order Now"/>
                                 </div>
-                                <img className='sm:absolute max-sm:ml-auto right-0 bottom-0 max-sm:max-w-[250px]' src={item.img} alt="pizza-img" />
+                                <img className='sm:absolute max-sm:ml-auto right-0 bottom-0 max-sm:max-w-[250px]' src={obj.img} alt="pizza-img" />
                                 <div className="absolute top-23 sm:top-[7px] right-2 sm:right-[49px]">
                                     <img className='sm:flex hidden' src={cloudImg} alt="cloud-img" />
                                     <img className='flex sm:hidden' src={singleCloudImg} alt="cloud-img" />
                                     <div className="absolute top-5 sm:top-[27px] right-8 sm:right-[35px]">
-                                        <p className='text-white text-center leading-[160%]'>{item.text}</p>
-                                        <p className='uppercase text-2xl text-center leading-[140%] text-white'>{item.price}</p>
+                                        <p className='text-white text-center leading-[160%]'>{obj.text}</p>
+                                        <p className='uppercase text-2xl text-center leading-[140%] text-white'>{obj.price}</p>
                                     </div>
                                 </div>
                             </div>

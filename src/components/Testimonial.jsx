@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -11,6 +13,14 @@ import CustomButton from "./common/CustomButton";
 import Description from "./common/Descritpion";
 
 const Testimonial = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,   
+            once: true,      
+            offset: 100,     
+            easing: 'ease-in-out',
+        });
+    }, []);
     return (
         <div className="relative px-5 py-8 sm:py-10 md:py-20 lg:py-25 bg-[url('src/assets/images/png/common-bg-img.png')] bg-no-repeat bg-cover bg-center">
             <div className="relative max-w-[1140px] mx-auto">
@@ -24,7 +34,7 @@ const Testimonial = () => {
                 <Heading
                     className="font-semibold text-[30px] sm:text-4xl md:text-[40px] lg:text-5xl text-center mx-auto max-w-[569px] !leading-[120%] mt-2 mb-15"
                     headText="What Our Customers Say"/>
-                <div className="flex flex-col lg:flex-row max-lg:justify-center max-lg:items-center relative gap-10">
+                <div className="flex flex-col lg:flex-row max-lg:justify-center max-lg:items-center relative gap-10" data-aos-delay="200" data-aos="zoom-out">
                     <div className="relative w-full max-w-[523px] sm:ml-[37px] sm:pb-[76px] pb-10">
                         <img
                             src={pizzaImg}
