@@ -13,6 +13,7 @@ import Explore from './components/Explore'
 import Buy from './components/Buy'
 import Delicious from './components/Delicious'
 import Testimonial from './components/Testimonial'
+import BackToTop from './components/common/BackToTop'
 function App() {
 
   return (
@@ -30,6 +31,7 @@ function App() {
       <Gallery />
       <Craving />
       <Footer />
+      <BackToTop/>
     </>
   )
 }
