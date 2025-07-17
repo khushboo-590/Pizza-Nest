@@ -23,39 +23,39 @@ const Gallery = () => {
                 <div className="flex xl:flex-row flex-col items-center md:gap-6 gap-4">
                     <div className="xl:flex hidden flex-col gap-4 w-full max-w-[267px]">
                         {GALLERY_DATA.leftCol.map((img, i) => (
-                            <img key={i} src={img} alt={`left-${i}`} className="object-cover rounded-xl" />
+                            <img key={i} src={img} alt={`left-${i}`} className="object-cover rounded-xl pointer-events-none" />
                         ))}
                     </div>
                     <div className="flex flex-col gap-4 w-full max-w-[558px]">
                         {GALLERY_DATA.centerTop.map((img, i) => (
-                            <img key={i} src={img} alt={`center-top-${i}`} className="object-cover rounded-xl" />
+                            <img key={i} src={img} alt={`center-top-${i}`} className="object-cover rounded-xl pointer-events-none" />
                         ))}
                         <div className="xl:flex hidden gap-4">
                             {GALLERY_DATA.centerBottom.map((img, i) => (
-                                <img key={i} src={img} alt={`center-bottom-${i}`} className="object-cover rounded-xl w-full" />
+                                <img key={i} src={img} alt={`center-bottom-${i}`} className="object-cover rounded-xl w-full pointer-events-none" />
                             ))}
                         </div>
                     </div>
                     <div className="xl:flex hidden flex-col gap-4 w-full max-w-[267px]">
                         {GALLERY_DATA.rightCol.map((img, i) => (
-                            <img key={i} src={img} alt={`right-${i}`} className="object-cover rounded-xl" />
+                            <img key={i} src={img} alt={`right-${i}`} className="object-cover rounded-xl pointer-events-none" />
                         ))}
                     </div>
                     <div className="max-sm:hidden flex xl:hidden gap-4 w-full justify-center">
                         {GALLERY_DATA.centerBottom.map((img, i) => (
-                            <img key={i} src={img} alt={`center-md-${i}`} className="object-cover rounded-xl" />
+                            <img key={i} src={img} alt={`center-md-${i}`} className="object-cover rounded-xl pointer-events-none" />
                         ))}
                     </div>
                     <div className="flex sm:hidden justify-center w-full">
                         {GALLERY_DATA.centerBottom.slice(0, 1).map((img, i) => (
-                            <img key={i} src={img} alt={`center-sm-${i}`} className="object-cover w-full rounded-xl" />
+                            <img key={i} src={img} alt={`center-sm-${i}`} className="object-cover w-full rounded-xl pointer-events-none" />
                         ))}
                     </div>
                     <div className="flex xl:hidden gap-4 justify-center w-full">
                         {[GALLERY_DATA.leftCol, GALLERY_DATA.rightCol].map((group, groupIdx) => (
                             <div key={groupIdx} className="flex flex-col gap-4 w-full max-w-[267px]">
                                 {group.map((img, i) => (
-                                    <img key={i} src={img} alt={`mobile-col-${groupIdx}-${i}`} className="object-cover rounded-xl" />
+                                    <img key={i} src={img} alt={`mobile-col-${groupIdx}-${i}`} className="object-cover rounded-xl pointer-events-none" />
                                 ))}
                             </div>
                         ))}

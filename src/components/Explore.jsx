@@ -8,17 +8,6 @@ import pizzaSlice from '../assets/images/png/pizza-slice-img.png';
 const categories = ["All", "Veg Pizzas", "Non-Veg Pizzas", "Combos & Drinks", "Sides & Dips"];
 const Explore = () => {
     const [activeCategory, setActiveCategory] = useState("All");
-    const getTitleKey = (category) => {
-        switch (category) {
-            case "All": return "title1";
-            case "Veg Pizzas": return "title2";
-            case "Non-Veg Pizzas": return "title3";
-            case "Combos & Drinks": return "title4";
-            case "Sides & Dips": return "title5";
-            default: return "title1";
-        }
-    };
-    const titleKey = getTitleKey(activeCategory);
     return (
         <div className="px-5 py-8 sm:py-10 md:py-20 lg:py-25 relative">
             <img className='absolute pointer-events-none left-0 top-0 max-w-[90px] md:max-w-[140px] lg:max-w-[195px] animate-bounce' src={pizzaSlice} alt="pizza-slice" />
@@ -50,13 +39,13 @@ const Explore = () => {
                     ))}
                 </div>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {MENU_DATA.map((item, i) => (
-                        <div className="" key={i}>
-                            <img className="object-cover w-full" src={item.image} alt="pizza" />
+                    {MENU_DATA[activeCategory].map((item, i) => (
+                        <div key={i}>
+                            <img className="object-cover w-full h-[292px] pointer-events-none" src={item.image} alt={item.title} />
                             <div className="max-w-[324px] p-5 mx-auto w-full bg-white border border-black/10 rounded-[8px] -translate-y-[29px] flex flex-col justify-center items-center">
                                 <p className="text-gradient text-2xl font-semibold leading-[34px] text-center">{item.price}</p>
                                 <h4 className="text-2xl font-semibold text-center leading-[34px] text-black my-0.5">
-                                    {item[titleKey]}
+                                    {item.title}
                                 </h4>
                                 <p className="text-base text-unmuted-gray leading-[160%] text-center px-2 mb-1">{item.desc}</p>
                                 <RatingSvg />
@@ -64,6 +53,7 @@ const Explore = () => {
                         </div>
                     ))}
                 </div>
+
                 <CustomButton className={' mt-4 lg:mt-8 !leading-[22px]'} btnText="View More" />
             </div>
         </div>

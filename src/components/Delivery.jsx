@@ -2,7 +2,7 @@ import React from 'react'
 import image from './../assets/images/png/delivery-img.png'
 import line from './../assets/images/png/delivery-line.png'
 import Heading from './common/Heading'
-import { FOODDELIVERY__DATA } from '../utils/helper'
+import { DELIVERY__DATA } from '../utils/helper'
 import CustomButton from './common/CustomButton'
 import Description from './common/Descritpion'
 import tamatoImg from '../assets/images/png/tamato-img.png'
@@ -23,7 +23,7 @@ const Delivery = () => {
                             headText="Fast, Fresh & Always On Time" />
                         <Description className={'text-[#373737] mb-3 font-normal mt-[15px] w-full lg:max-w-[463px]'} text="We deliver your favorite pizzas piping hot, just the way you love them — anywhere in town. From cheese-loaded bites to spicy paneer delights, your cravings are just a click away." />
                         <div className='flex flex-col gap-[8px] max-lg:grid max-lg:grid-cols-2  mt-10'>
-                            {FOODDELIVERY__DATA.map((item, index) => (
+                            {DELIVERY__DATA.map((item, index) => (
                                 <div key={index} className='flex gap-[6px]'>
                                     <item.icon />
                                     <Description className={'font-normal text-[#373737]'} text={item.info} />
@@ -33,7 +33,7 @@ const Delivery = () => {
                         <CustomButton className={'mt-6'} btnText="Order Now" />
                     </div>
                     <div className='lg:w-1/2 w-full px-3'>
-                        <img src={image} alt="image" className='max-w-[612px] w-full block mx-auto' />
+                        <img src={image} alt="image" className='max-w-[612px] w-full block mx-auto pointer-events-none' />
                     </div>
                 </div>
             </div>

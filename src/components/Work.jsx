@@ -1,5 +1,5 @@
 import React from 'react';
-import { HOW_IT_WORKS } from '../utils/helper';
+import { HOW_IT_WORKS_DATA } from '../utils/helper';
 import CustomButton from './common/CustomButton';
 import Description from './common/Descritpion';
 import Heading from './common/Heading';
@@ -19,10 +19,10 @@ const Works = () => {
                 headText="Your Perfect Pizza in Just 3 Easy Steps!"/>
             <div className="flex md:flex-row flex-col justify-center items-center gap-6">
                 <div className="flex md:flex-row flex-col justify-center items-center gap-6 flex-wrap">
-                    {HOW_IT_WORKS.map(({ id, icon: Icon, title, desc }, index) => (
+                    {HOW_IT_WORKS_DATA.map(({ id, icon: Icon, title, desc }, index) => (
                         <div key={id} className='relative '>
                             <div className="max-w-[364px] flex flex-col items-center text-center ">
-                                <div className="w-[70px] h-[70px] flex items-center justify-center rounded-full bg-[#FDEDE3] mb-3 me">
+                                <div className="w-[70px] h-[70px] flex items-center justify-center rounded-full bg-[#FDEDE3] mb-3 me pointer-events-none">
                                     <Icon />
                                 </div>
                                 <p
@@ -35,7 +35,7 @@ const Works = () => {
                                 />
                                 <CustomButton className="!py-[10px] !px-[16px]" btnText="View Menu" />
                             </div>
-                            {index !== HOW_IT_WORKS.length - 1 && (
+                            {index !== HOW_IT_WORKS_DATA.length - 1 && (
                                 <img
                                     src={leftArrow}
                                     alt="arrow"

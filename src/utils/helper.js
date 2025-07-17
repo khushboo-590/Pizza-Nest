@@ -30,7 +30,7 @@ export const Nav_DATA=[
     { label: 'Offers', path: '/offers' },
     { label: 'About Us', path: '/about' },
 ];
-export const HOW_IT_WORKS = [
+export const HOW_IT_WORKS_DATA = [
     {
         id: 1,
         icon: Pizza,
@@ -91,7 +91,7 @@ export const ABOUT_US_CARDS_DATA = [
     }
 ]
 
-export const FOODDELIVERY__DATA = [
+export const DELIVERY__DATA = [
     {
         icon: Check,
         info: '30-Minute Delivery Promise',
@@ -120,67 +120,7 @@ export const GALLERY_DATA = {
 };
 
 
-export const DELIVERY_FEATURES = [
-    "30-Minute Delivery Promise",
-    "Fresh Ingredients Every Time",
-    "Hygienic, Contactless Delivery",
-    "Real-time Order Tracking",
-    "Eco-Friendly Packaging",
-];
-
-export const MENU_CATEGORIES = [
-    'All',
-    'Veg Pizzas',
-    'Non-Veg Pizzas',
-    'Combos & Drinks',
-    'Sides & Dips',
-];
-
-export const MENU_ITEMS = [
-    {
-        id: 1,
-        title: 'Farmhouse Magic',
-        desc: 'Onion, capsicum, tomato, grilled mushroom, mozzarella cheese',
-        price: ['₹229', '₹359', '₹499'],
-        image: exploreImg1,
-        category: 'Veg Pizzas',
-    },
-    {
-        id: 2,
-        title: 'Masala Paneer',
-        desc: 'Masala-marinated paneer, sautéed onions, capsicum, mozzarella cheese',
-        price: ['₹279', '₹399', '₹519'],
-        image: exploreImg2,
-        category: 'Veg Pizzas',
-    },
-    {
-        id: 3,
-        title: 'Cheese & Corn',
-        desc: 'Sweet corn, mozzarella cheese, tomato sauce',
-        price: ['₹249', '₹369', '₹499'],
-        image: exploreImg3,
-        category: 'Veg Pizzas',
-    },
-    {
-        id: 4,
-        title: 'Chicken Dominator',
-        desc: 'Loaded with chicken tikka, grilled chicken, peri-peri chicken',
-        price: ['₹299', '₹429', '₹569'],
-        image: exploreImg1,
-        category: 'Non-Veg Pizzas',
-    },
-    {
-        id: 5,
-        title: 'Pepperoni Classic',
-        desc: 'Pepperoni slices, mozzarella cheese, tomato sauce',
-        price: ['₹289', '₹419', '₹559'],
-        image: exploreImg2,
-        category: 'Non-Veg Pizzas',
-    },
-
-];
-
-export const LIMITEDOFFER_DATA = [
+export const LIMITED_DATA = [
     {
         title: "SPICY PANEER",
         text: "Only",
@@ -222,38 +162,108 @@ export const BESTSELLER_DATA = [
     },
 ]
 
-export const MENU_DATA = [
-    {
-        title1: "Farmhouse Magic1",
-        title2: "Farmhouse Magic2",
-        title3: "Farmhouse Magic3",
-        title4: "Farmhouse Magic4",
-        title5: "Farmhouse Magic5",
-        price: "₹229 / ₹359 / ₹499",
-        desc: "Onion, capsicum, tomato, grilled mushroom, mozzarella cheese",
-        image: ourMenuPizza1
-    },
-    {
-        title1: "Masala Paneer1",
-        title2: "Masala Paneer2",
-        title3: "Masala Paneer3",
-        title4: "Masala Paneer4",
-        title5: "Masala Paneer5",
-        price: "₹279 / ₹399 / ₹519",
-        desc: "Masala-marinated paneer, sautéed onions, capsicum, mozzarella cheese",
-        image: ourMenuPizza2
-    },
-    {
-        title1: "Solo Meal Combo1",
-        title2: "Solo Meal Combo2",
-        title3: "Solo Meal Combo3",
-        title4: "Solo Meal Combo4",
-        title5: "Solo Meal Combo5",
-        price: "₹379",
-        desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
-        image: ourMenuPizza3
-    },
-];
+export const MENU_DATA = {
+    "All": [
+        {
+            title: "Farmhouse Magic",
+            price: "₹229 / ₹359 / ₹499",
+            desc: "Onion, capsicum, tomato, grilled mushroom, mozzarella cheese",
+            image: ourMenuPizza1,
+        },
+        {
+            title: "Masala Paneer",
+            price: "₹279 / ₹399 / ₹519",
+            desc: "Masala-marinated paneer, sautéed onions, capsicum, mozzarella cheese",
+            image: ourMenuPizza2,
+        },
+        {
+            title: "Solo Meal Combo",
+            price: "₹379",
+            desc: "1 Regular Pizza + Garlic Bread + 1 Soft Drink",
+            image: ourMenuPizza3,
+        }
+    ],
+    "Veg Pizzas": [
+        {
+            title: "Green Delight",
+            price: "₹229",
+            desc: "Loaded with fresh veggies & mozzarella cheese",
+            image: galleryImg1,
+        },
+        {
+            title: "Paneer Paradise",
+            price: "₹249",
+            desc: "Spicy paneer cubes and onions",
+            image: ourMenuPizza1,
+        },
+        {
+            title: "Corn Treat",
+            price: "₹219",
+            desc: "Golden corn and cheese",
+            image: ourMenuPizza2,
+        }
+    ],
+    "Non-Veg Pizzas": [
+        {
+            title: "Chicken Supreme",
+            price: "₹299",
+            desc: "Grilled chicken with spicy sauce",
+            image: ourMenuPizza1,
+        },
+        {
+            title: "BBQ Chicken",
+            price: "₹319",
+            desc: "BBQ chicken and cheese mix",
+            image: ourMenuPizza2,
+        },
+        {
+            title: "Pepperoni Burst",
+            price: "₹349",
+            desc: "Classic pepperoni loaded pizza",
+            image: galleryImg1,
+        }
+    ],
+    "Combos & Drinks": [
+        {
+            title: "Pepsi + Garlic Bread",
+            price: "₹129",
+            desc: "500ml soft drink + garlic bread",
+            image: ourMenuPizza3,
+        },
+        {
+            title: "Solo Combo",
+            price: "₹199",
+            desc: "1 pizza + 1 drink",
+            image: ourMenuPizza2,
+        },
+        {
+            title: "Party Combo",
+            price: "₹399",
+            desc: "2 pizzas + 2 drinks",
+            image: ourMenuPizza1,
+        }
+    ],
+    "Sides & Dips": [
+        {
+            title: "Garlic Breadsticks",
+            price: "₹79",
+            desc: "Crispy and buttery garlic breadsticks",
+            image: ourMenuPizza1,
+        },
+        {
+            title: "Choco Lava Cake",
+            price: "₹99",
+            desc: "Warm chocolate-filled dessert",
+            image: ourMenuPizza2,
+        },
+        {
+            title: "Cheesy Dip",
+            price: "₹39",
+            desc: "Smooth cheesy dip for sides",
+            image: ourMenuPizza3,
+        }
+    ]
+};
 
 export const SOCIAL_ICON = [
     {

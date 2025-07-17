@@ -29,7 +29,7 @@ const Testimonial = () => {
                         <img
                             src={pizzaImg}
                             alt="Pizza"
-                            className="w-full rounded-xl object-cover"/>
+                            className="w-full rounded-xl object-cover pointer-events-none"/>
                         <div className="absolute top-[60px] sm-mx:top-[70px] left-[-10px] sm:left-[-36px] flex flex-col gap-2 sm:gap-4">
                             {TESTIMONIAL_AVATAR.map((avatar, i) => {
                                 const sizeClass =
@@ -41,7 +41,7 @@ const Testimonial = () => {
                                         key={i}
                                         src={avatar}
                                         alt="avatar"
-                                        className={`cursor-pointer rounded-full ${sizeClass} transition-all duration-300`}
+                                        className={`cursor-pointer rounded-full ${sizeClass} transition-all duration-300 pointer-events-none`}
                                     />
                                 );
                             })}

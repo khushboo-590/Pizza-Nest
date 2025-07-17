@@ -32,7 +32,7 @@ const AboutUs = () => {
                                 ))}
                             </div>
                         </div>
-                        <img className='lg:max-h-[597px] pointer-events-none max-w-[383px] w-full mt-4' src={aboutImg} alt="man-img" />
+                        <img className='lg:max-h-[597px] pointer-events-none max-w-[383px] w-full mt- ' src={aboutImg} alt="man-img" />
                     </div>
                 </div>
             </div>
