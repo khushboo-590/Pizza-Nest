@@ -50,7 +50,7 @@ const Explore = () => {
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {MENU_DATA[activeCategory].map((obj, i) => (
                         <div key={i} >
-                            <img className="object-cover w-full h-[292px] pointer-events-none" src={obj.image} alt={obj.title} />
+                            <img className="object-cover w-full h-[292px] pointer-events-none rounded-[12px]" src={obj.image} alt={obj.title} />
                             <div className="max-w-[324px] p-5 mx-auto w-full bg-white border border-black/10 rounded-[8px] -translate-y-[29px] flex flex-col justify-center objs-center">
                                 <p className="text-gradient text-2xl font-semibold leading-[34px] text-center">{obj.price}</p>
                                 <h4 className="text-2xl font-semibold text-center leading-[34px] text-black my-0.5">
